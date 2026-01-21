@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegraSI - Conectando o Futuro</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --neon-lime: #00FE00; 
+            --deep-navy: #00004D;
+            --accent-purple: #A855F7;
+            --accent-orange: #F97316;
+            --card-bg: rgba(10, 14, 26, 0.6);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-navy);
+            color: white;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        /* Efeitos de Brilho no Fundo */
+        .bg-glow-green {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(203, 251, 69, 0.08) 0%, rgba(2, 4, 10, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(80px);
+        }
+
+        .bg-glow-purple {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.06) 0%, rgba(2, 4, 10, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(80px);
+        }
+
+        /* Glassmorphism e Detalhes da Foto */
+        .glass-panel {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .neon-border-box {
+            border: 1.5px solid var(--neon-lime) !important;
+            box-shadow: 0 0 25px rgba(203, 251, 69, 0.2);
+        }
+
+        .hero-gradient-text {
+            background: linear-gradient(to bottom, #FFFFFF 50%, #A1A1AA 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .diamond-shape {
+            width: 35px;
+            height: 35px;
+            transform: rotate(45deg);
+            position: absolute;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(45deg); }
+            50% { transform: translateY(-15px) rotate(45deg); }
+        }
+
+        .animate-float {
+            animation: float 5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fundo Decorativo -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="bg-glow-green top-[-100px] left-[-100px]"></div>
+        <div class="bg-glow-purple bottom-[15%] right-[-50px]"></div>
+        
+        <div class="diamond-shape bg-[#A855F7] top-[20%] left-[8%] opacity-40 animate-float"></div>
+        <div class="diamond-shape bg-[#CBFB45] top-[65%] right-[10%] opacity-40 animate-float" style="animation-delay: 1s;"></div>
+        <div class="diamond-shape bg-[#F97316] bottom-[15%] left-[15%] opacity-30 animate-float scale-75" style="animation-delay: 2s;"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="relative z-50 w-full px-8 py-6">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-[#00FE00] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(203,251,69,0.4)]">
+                    <i data-lucide="code-xml" class="text-black w-6 h-6"></i>
+                </div>
+                <span class="text-2xl font-black tracking-tighter">INTEGRA<span class="text-[#00FE00]">SI</span></span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-10 text-sm font-bold uppercase tracking-widest text-gray-400">
+                <a href="#" class="hover:text-[#CBFB45] transition-colors">Home</a>
+                <a href="#" class="hover:text-[#CBFB45] transition-colors">Cronograma</a>
+                <a href="#" class="hover:text-[#CBFB45] transition-colors">Oficinas</a>
+                <a href="#" class="hover:text-[#CBFB45] transition-colors">Formulários</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="relative z-10 flex flex-col items-center justify-center min-h-[85vh] px-6 text-center">
+        
+        <div class="mb-8 flex items-center space-x-3 bg-white/5 border border-white/10 px-5 py-2 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-[#CBFB45] shadow-[0_0_8px_#CBFB45]"></span>
+            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-300">IntegraSI 2026</span>
+        </div>
+
+        <h1 class="hero-gradient-text text-5xl md:text-8xl font-black mb-8 leading-[1.1] max-w-5xl tracking-tight">
+            CONECTANDO O FUTURO <br class="hidden md:block"> DA TECNOLOGIA
+        </h1>
+
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed font-medium">
+            Integre-se ao curso de SI da UNEX (FSA), em contato com veteranos, calouros e professores.
+        </p>
+
+        <!-- Detalhes de Data e Modalidade (Com borda neon e glassmorphism) -->
+        <div class="glass-panel neon-border-box rounded-3xl p-8 md:px-12 mb-14 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-16">
+            <div class="text-center md:text-left">
+                <p class="text-[#00FE00] text-[10px] font-black uppercase tracking-[0.2em] mb-2">Quando acontece</p>
+                <h3 class="text-3xl md:text-4xl font-black">02 a 06 de Março</h3>
+            </div>
+            <div class="hidden md:block h-12 w-[1px] bg-white/10"></div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center space-y-5 sm:space-y-0 sm:space-x-8">
+            <button class="group w-full sm:w-auto bg-[#00FE00] hover:bg-[#d9ff66] text-black px-10 py-5 rounded-2xl font-black text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(203,251,69,0.3)] flex items-center justify-center space-x-3">
+                <span>INSCREVER-SE AGORA</span>
+                <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </button>
+            <button class="w-full sm:w-auto flex items-center justify-center space-x-3 border-2 border-white/10 hover:border-white/30 px-10 py-5 rounded-2xl font-bold text-lg transition-all">
+                <i data-lucide="calendar" class="w-5 h-5 text-[#CBFB45]"></i>
+                <span>VER PROGRAMAÇÃO</span>
+            </button>
+        </div>
+
+        <!-- SVG Decorativo -->
+        <div class="absolute bottom-[-50px] left-[-20px] opacity-10 hidden xl:block">
+            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 200H100M100 200V100H250M250 100H400M250 100V300H350" stroke="#CBFB45" stroke-width="3" stroke-dasharray="10 10"/>
+                <circle cx="100" cy="200" r="6" fill="#00FE00"/>
+                <circle cx="250" cy="100" r="6" fill="#00FE00"/>
+                <circle cx="350" cy="300" r="6" fill="#00FE005"/>
+            </svg>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
