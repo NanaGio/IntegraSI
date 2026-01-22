@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IntegraSI 2026</title>
+
+  <!-- Icon -->
+   <link rel="icon" href="src/img/icone.png">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+  <!-- FUNDO DECORATIVO -->
+  <div class="background">
+    <div class="glow green"></div>
+    <div class="glow purple"></div>
+
+    <div class="square green s1"></div>
+    <div class="square lime s2"></div>
+    <div class="square orange s3"></div>
+    <div class="square purple s4"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img style="width: 10vw;" src="src/img/logoNome.png" alt="IntegraSI" srcset="">
+    </div>
+
+    <nav>
+      <a href="#">Cronograma</a>
+      <a href="#">Oficinas</a>
+      <a href="#">Inscrição</a>
+      <a href="#">Comissão</a>
+      <a href="#">Galeria</a>
+    </nav>
+
+    <button class="btn-outline">Inscrever-se</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="badge">
+      <span></span>
+      <p>Evento de 02 a 06 de Março</p>
+    </div>
+
+    <h1><img style="width: 35vw;" src="src/img/logo.png" alt="IntegraSI" srcset=""></h1>
+
+    <p class="subtitle">
+      O principal evento de tecnologia reunindo desenvolvedores,
+      engenheiros de sistemas e profissionais de TI para explorar o futuro da integração.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn-primary">Inscrever-se Agora</button>
+      <button class="btn-secondary">Ver Oficinas</button>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat">
+        <h2 data-count="50">0</h2>
+        <span>Oficinas</span>
+      </div>
+      <div class="stat">
+        <h2 data-count="300">0</h2>
+        <span>Participantes</span>
+      </div>
+      <div class="stat">
+        <h2 data-count="5">0</h2>
+        <span>Dias</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="cronograma" class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cronograma do Evento</h2>
+        <p>Identifique o que vai rolar nos nossos ambientes de networking.</p>
+      </div>
+
+      <div class="schedule-grid" id="scheduleGrid"></div>
+    </div>
+  </section>
+
+  <section id="oficinas" class="section-gray">
+    <div class="container">
+      <div class="section-header">
+        <h2>Oficinas em Destaque</h2>
+        <p>Aprenda com especialistas da indústria através de oficinas práticas e sessões interativas</p>
+      </div>
+
+      <div class="workshops-grid" id="workshopsGrid"></div>
+
+      <div class="center-btn" style="margin-top: 40px;">
+          <button class="btn-outline-dark">Ver Todas as Oficinas <i data-lucide="arrow-right" style="width:16px;"></i></button>
+        </div>
+      
+    </div>
+  </section>
+
+  <section class="participar-section">
+    <!-- elementos decorativos -->
+    <div class="decor decor-left"></div>
+    <div class="decor decor-right"></div>
+
+    <div class="container">
+      <header class="participar-header">
+        <h2>Participe do IntegraSI 2026</h2>
+        <p>
+          O IntegraSI acontecerá de <strong>02 a 06 de março de 2026</strong>. O intuito é oferecer para os
+          novos alunos a oportunidade de se familiarizar com o ambiente universitário,
+          conhecerem os colegas e professores, e se engajarem em atividades para estimular
+          seu desenvolvimento acadêmico.
+        </p>
+      </header>
+
+      <div class="participar-grid">
+        <article class="participar-card">
+          <div class="icon-box orange">
+            <i data-lucide="users"></i>
+          </div>
+          <h3>Conhecer</h3>
+          <p>
+            Você pode vir participar para aprender a quebrar aquele passo para conhecer
+            como será mais fácil sua vida ao amanhecer da Universidade.
+          </p>
+          <a href="#" class="btn orange">Saber Mais</a>
+        </article>
+
+        <article class="participar-card">
+          <div class="icon-box blue">
+            <i data-lucide="book-open"></i>
+          </div>
+          <h3>Aprender</h3>
+          <p>
+            Você pode se preparar para aprender assuntos específicos, conhecendo as
+            oficinas que serão estudadas na sua série ainda nesse ano.
+          </p>
+          <a href="#" class="btn blue">Ver Oficinas</a>
+        </article>
+
+        <article class="participar-card">
+          <div class="icon-box green">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <h3>Se Divertir</h3>
+          <p>
+            É claro, um clima descontraído, buscando conhecimentos, divertindo e tirando
+            as paixões dos gêneros da Engenharia de Sistemas.
+          </p>
+          <a href="#" class="btn green">Participar</a>
+        </article>
+
+        <article class="participar-card">
+          <div class="icon-box purple">
+            <i data-lucide="help-circle"></i>
+          </div>
+          <h3>Propor Oficina</h3>
+          <p>
+            Compartilhe seu conhecimento! Proponha uma oficina e ajude outros estudantes
+            a aprenderem algo novo.
+          </p>
+          <a href="#" class="btn purple">Enviar Proposta</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<section class="cta-advanced">
+  <div class="cta-bg-effects">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="cta-content-glass">
+    <div class="glow-border"></div>
+    <h2>Para os veteranos</h2>
+    <p>
+      Compartilhe sua experiência e contribua para a construção da nossa comunidade acadêmica.
+    </p>
+    <button class="btn-primary-glow">
+      Inscrever-se como Participante
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </button>
+  </div>
+</section>
+
+
+<section class="section light">
+  <div class="container">
+    <h2>Comissão Organizadora</h2>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://i.pravatar.cc/300?img=1">
+        <h3>Dra. Sarah Martinez</h3>
+        <span>Coordenadora do Evento</span>
+      </div>
+
+      <div class="team-card">
+        <img src="https://i.pravatar.cc/300?img=2">
+        <h3>Alex Chen</h3>
+        <span>Líder Técnico</span>
+      </div>
+
+      <div class="team-card">
+        <img src="https://i.pravatar.cc/300?img=3">
+        <h3>Maya Patel</h3>
+        <span>Coordenadora de Oficinas</span>
+      </div>
+
+      <div class="team-card">
+        <img src="https://i.pravatar.cc/300?img=4">
+        <h3>James Wilson</h3>
+        <span>Relações Institucionais</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section light">
+  <div class="container">
+    <h2>Galeria do Evento</h2>
+
+    <div class="gallery-grid">
+      <img src="https://picsum.photos/500/300?1">
+      <img src="https://picsum.photos/500/300?2">
+      <img src="https://picsum.photos/500/300?3">
+      <img src="https://picsum.photos/500/300?4">
+      <img src="https://picsum.photos/500/300?5">
+      <img src="https://picsum.photos/500/300?6">
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo white">
+          <div class="logo-icon"><i data-lucide="code-2"></i></div>
+          <span>Integra<span>SI</span></span>
+        </div>
+        <p>Conectando mentes, criando o futuro.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <a href="#">Sobre</a>
+        <a href="#">Palestrantes</a>
+        <a href="#">Patrocinadores</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="#">contato@integrasi.com</a>
+        <a href="#">(75) 99999-9999</a>
+        <a href="#">Feira de Santana, BA</a>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <div class="input-group">
+          <input type="email" placeholder="Seu e-mail">
+          <button><i data-lucide="send"></i></button>
+        </div>
+        <div class="socials-footer">
+          <i data-lucide="instagram"></i>
+          <i data-lucide="linkedin"></i>
+          <i data-lucide="youtube"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 IntegraSI FSA. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="js/script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
