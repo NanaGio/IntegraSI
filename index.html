@@ -201,54 +201,46 @@
 </section>
 
 
-<section class="section light">
+<section id="comissao" class="section-light">
   <div class="container">
-    <h2>Comissão Organizadora</h2>
+    <div class="section-header">
+      <h2>Comissão Organizadora</h2>
+      <p>Quem faz o evento acontecer.</p>
+    </div>
 
-    <div class="team-grid">
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/300?img=1">
-        <h3>Dra. Sarah Martinez</h3>
-        <span>Coordenadora do Evento</span>
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="team-track">
+        </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="galeria" class="section-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Galeria do Evento</h2>
+      <p>Confira os melhores momentos das edições passadas.</p>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
       </div>
 
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/300?img=2">
-        <h3>Alex Chen</h3>
-        <span>Líder Técnico</span>
-      </div>
-
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/300?img=3">
-        <h3>Maya Patel</h3>
-        <span>Coordenadora de Oficinas</span>
-      </div>
-
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/300?img=4">
-        <h3>James Wilson</h3>
-        <span>Relações Institucionais</span>
-      </div>
+    <div class="center-btn" id="load-more-container">
+      <button id="load-more-btn" class="btn-outline-dark">
+        Carregar Mais Fotos <i data-lucide="plus"></i>
+      </button>
     </div>
   </div>
 </section>
 
-
-<section class="section light">
-  <div class="container">
-    <h2>Galeria do Evento</h2>
-
-    <div class="gallery-grid">
-      <img src="https://picsum.photos/500/300?1">
-      <img src="https://picsum.photos/500/300?2">
-      <img src="https://picsum.photos/500/300?3">
-      <img src="https://picsum.photos/500/300?4">
-      <img src="https://picsum.photos/500/300?5">
-      <img src="https://picsum.photos/500/300?6">
-    </div>
+<div id="gallery-modal" class="modal-overlay">
+  <span class="modal-close"><i data-lucide="x"></i></span>
+  <div class="modal-content">
+    <img id="modal-image" src="" alt="">
+    <p id="modal-caption"></p>
   </div>
-</section>
-
+</div>
 
 
   <footer class="footer">

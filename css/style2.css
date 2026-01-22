@@ -900,48 +900,362 @@ nav a:hover {
   }
 }
 
-/* =========================
+
+/* =========================================
    COMISSÃO
-========================= */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+   ========================================= */
+#comissao .container {
+    max-width: fit-content;
+    margin: auto;
+    padding: 0 24px;
 }
 
-.team-card {
-  text-align: center;
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
 }
 
-.team-card img {
+/* A Forma Abstrata Gigante no Fundo */
+.abstract-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  z-index: 0;
+  opacity: 0.6; /* Transparência ajustada */
+  pointer-events: none;
+}
+.shape-style-0 { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; transform: translate(-30%, -40%) rotate(-15deg); }
+.shape-style-1 { border-radius: 60% 40% 30% 70% / 50% 60% 30% 60%; transform: translate(-20%, -50%) rotate(20deg); top: auto; bottom: 0; }
+.shape-style-2 { border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%; transform: translate(-40%, -30%) rotate(5deg); width: 250%; }
+
+/* Conteúdo da Frente */
+.card-content {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  border-radius: var(--radius-md);
-  margin-bottom: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* =========================================
+   IMAGEM LIMPA (SEM MÁSCARA)
+   ========================================= */
+
+.simple-image-wrapper {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 24px;
+  margin-top: -70px; /* Puxa para cima para sair um pouco do fluxo visual */
+  
+  /* Estilo da Imagem */
+  border-radius: 24px; /* Cantos arredondados modernos */
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15); /* Sombra suave para destacar do fundo */
+  
+  transition: transform 0.3s ease;
+}
+
+.simple-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Efeito Hover na imagem */
+.team-card:hover .simple-image-wrapper {
+  transform: scale(1.05) rotate(-2deg); /* Leve movimento ao passar o mouse */
+}
+
+/* Tipografia */
 .team-card h3 {
-  font-size: 16px;
+  font-size: 1.4rem;
   font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 8px;
 }
 
 .team-card span {
-  font-size: 13px;
-  color: var(--text-gray);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b; /* Cinza azulado */
+  margin-bottom: 24px;
+  display: block;
+}
+
+/* Botões Sociais */
+.social-row {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.social-btn:hover {
+  background: #1e293b;
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.social-btn i {
+  width: 20px;
+  height: 20px;
 }
 
 /* =========================
-   GALERIA
-========================= */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+   CARROSSEL INFINITO
+   ========================= */
+
+/* A "Janela" que esconde o que está fora */
+.carousel-viewport {
+  width: 100%;
+  margin: -3rem 0;
+  overflow: hidden; /* Importante para não criar barra de rolagem horizontal na página */
+  position: relative;
+  padding: 40px 0; /* Espaço para a sombra dos cards não cortar */
+  /* Máscara de gradiente nas laterais para suavizar a entrada/saída */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 95%, transparent);
 }
 
-.gallery-grid img {
+/* A trilha que contém todos os cards (originais + duplicados) */
+.carousel-track {
+  display: flex;
+  gap: 32px; /* Espaço entre os cards */
+  width: max-content; /* Permite que a trilha cresça o quanto precisar */
+  /* A animação mágica */
+  animation: scrollLeft 40s linear infinite;
+}
+
+/* Pausar a animação quando passar o mouse */
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+/* Os Keyframes do movimento */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Movemos -50% porque o JS vai duplicar a lista. 
+       Quando chegar na metade (fim da lista original), ele volta pro 0 instantaneamente. */
+    transform: translateX(-50%);
+  }
+}
+
+/* Ajustes no Card para o Carrossel */
+.team-card {
+  /* Tamanho fixo é importante para o carrossel não quebrar */
+  width: 280px; 
+  flex-shrink: 0; /* Impede que o card seja esmagado */
+  
+  /* Mantendo o estilo visual anterior */
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 420px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* O resto do CSS interno do card (imagem, botões, formas) continua igual ao anterior */
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+}
+/* =========================
+   GALERIA MASONRY (Pinterest Style)
+   ========================= */
+.gallery-grid {
+  /* Cria o layout de colunas estilo jornal/Pinterest */
+  column-count: 3; 
+  column-gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* O Card da Imagem */
+.gallery-item {
+  position: relative;
+  /* break-inside: avoid impede que o card seja cortado entre colunas */
+  break-inside: avoid; 
+  margin-bottom: 24px; /* Espaço vertical entre os itens */
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  background: #000; /* Fundo preto para quando carregar */
+}
+
+/* A Imagem agora respeita a proporção original (Dinamismo) */
+.gallery-item img {
   width: 100%;
-  border-radius: var(--radius-md);
-  object-fit: cover;
+  height: auto; /* Altura automática baseada na imagem real */
+  display: block; /* Remove espaços extras */
+  transition: transform 0.5s ease;
+}
+
+/* Efeito de Hover */
+.gallery-item:hover img {
+  transform: scale(1.05);
+  opacity: 0.8; /* Leve escurecida para destacar o texto */
+}
+
+/* Overlay (Legenda + Data) */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+  display: flex;
+  flex-direction: column; /* Texto um embaixo do outro */
+  justify-content: flex-end; /* Alinha no fundo */
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Estilo da Data */
+.gallery-date {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #00fe00; /* Verde neon do seu tema */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+  transform: translateY(20px);
+  transition: transform 0.3s ease 0.05s; /* Delay leve */
+}
+
+/* Estilo da Legenda */
+.gallery-caption {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  transform: translateY(20px);
+  transition: transform 0.3s ease 0.1s;
+}
+
+/* Animação de entrada do texto */
+.gallery-item:hover .gallery-date,
+.gallery-item:hover .gallery-caption {
+  transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .gallery-grid { column-count: 2; }
+}
+@media (max-width: 600px) {
+  .gallery-grid { column-count: 1; }
+}
+
+/* Ajuste no Modal para mostrar data */
+.modal-info {
+    margin-top: 16px;
+}
+.modal-date {
+    display: block;
+    color: #00fe00;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   MODAL (LIGHTBOX)
+   ========================= */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: none; /* Escondido por padrão */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+.modal-content p {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.modal-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1);
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  transition: 0.3s;
+}
+
+.modal-close:hover {
+  background: rgba(255,255,255,0.3);
+  transform: rotate(90deg);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================================
