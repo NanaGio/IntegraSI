@@ -19,10 +19,17 @@ counters.forEach(counter => {
   update();
 });
 
-// SCROLL SUAVE (preparado para futuras seções)
-document.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", e => {
+// SCROLL SUAVE
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
+    const targetId = this.getAttribute("href");
+    if (targetId === "#") return;
+    
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
 
@@ -44,45 +51,17 @@ sections.forEach(sec => observer.observe(sec));
 const workshops = [
   {
     image: "src/workshops/background.png",
-    title: "Desenvolvimento Full-Stack",
+    title: "N/A",
     date: "Sex, 15 Mar 2026",
     organizer: "IntegraSI",
-    link: "#"
+    link: "https://www.sympla.com.br/produtor/latec"
   },
   {
     image: "src/workshops/background.png",
-    title: "Arquitetura de Banco de Dados",
+    title: "N/A",
     date: "Seg, 18 Mar 2026",
     organizer: "IntegraSI",
-    link: "#"
-  },
-  {
-    image: "src/workshops/background.png",
-    title: "Aplicações Cloud Native",
-    date: "Qua, 20 Mar 2026",
-    organizer: "IntegraSI",
-    link: "#"
-  },
-  {
-    image: "src/workshops/background.png",
-    title: "Fundamentos de Cibersegurança",
-    date: "Qui, 21 Mar 2026",
-    organizer: "IntegraSI",
-    link: "#"
-  },
-  {
-    image: "src/workshops/background.png",
-    title: "IA & Machine Learning",
-    date: "Sex, 22 Mar 2026",
-    organizer: "IntegraSI",
-    link: "#"
-  },
-  {
-    image: "src/workshops/background.png",
-    title: "Otimização de Performance Web",
-    date: "Sex, 22 Mar 2026",
-    organizer: "IntegraSI",
-    link: "#"
+    link: "https://www.sympla.com.br/produtor/latec"
   }
 ];
 
@@ -91,52 +70,53 @@ const cronograma = [
     dia: "Dia 1",
     data: "02 Mar, 2026",
     eventos: [
-      { hora: "08:00", titulo: "Credenciamento" },
-      { hora: "09:30", titulo: "Abertura Oficial" },
-      { hora: "10:30", titulo: "Palestra Magna" },
-      { hora: "14:00", titulo: "Início Oficinas" }
+      { classificacao: "TODOS" ,hora: "18:30", titulo: "Abertura Oficial" },
+      { classificacao: "TODOS" ,hora: "19:30", titulo: "Palestra 1 - Convidados externos" },
+      { classificacao: "TODOS" ,hora: "20:20", titulo: "Palestra 2 - Convidados externos" },
     ]
   },
   {
     dia: "Dia 2",
     data: "03 Mar, 2026",
     eventos: [
-      { hora: "08:00", titulo: "Oficinas Práticas" },
-      { hora: "14:00", titulo: "Mesa Redonda" },
-      { hora: "16:00", titulo: "Networking Coffee" },
-      { hora: "08:00", titulo: "Hackathon Início" },
-      { hora: "14:00", titulo: "Mentoria Técnica" },
-      { hora: "22:00", titulo: "Corujão Code" }
+      { classificacao: "CALOUROS" ,hora: "18:30", titulo: "CURSO 1" },
+      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 1" },
+      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 2" },
     ]
   },
   {
     dia: "Dia 3",
     data: "04 Mar, 2026",
     eventos: [
-      { hora: "09:00", titulo: "Workshop Cloud" },
-      { hora: "14:00", titulo: "Segurança Web" },
-      { hora: "18:00", titulo: "Happy Hour" }
+      { classificacao: "CALOUROS" ,hora: "18:30", titulo: "CURSO 2" },
+      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 3" },
+      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 4" },
     ]
   },
   {
     dia: "Dia 4",
     data: "05 Mar, 2026",
     eventos: [
-      { hora: "08:00", titulo: "Hackathon Início" },
-      { hora: "14:00", titulo: "Mentoria Técnica" },
-      { hora: "22:00", titulo: "Corujão Code" },
-      { hora: "08:00", titulo: "Hackathon Início" },
-      { hora: "14:00", titulo: "Mentoria Técnica" },
-      { hora: "22:00", titulo: "Corujão Code" }
+      { classificacao: "CALOUROS" ,hora: "18:30", titulo: "CURSO 3" },
+      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 5" },
+      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 6" },
     ]
   },
   {
     dia: "Dia 5",
     data: "06 Mar, 2026",
     eventos: [
-      { hora: "10:00", titulo: "Pitch Hackathon" },
-      { hora: "14:00", titulo: "Premiação" },
-      { hora: "16:00", titulo: "Encerramento" }
+      { classificacao: "TODOS" ,hora: "18:30", titulo: "Palestra 3" },
+      { classificacao: "TODOS" ,hora: "18:30", titulo: "Palestra 4" },
+      { classificacao: "TODOS" ,hora: "20:20", titulo: "HACKATHON" },
+    ]
+  },
+    {
+    dia: "Dia 6",
+    data: "07 Mar, 2026",
+    eventos: [
+      { classificacao: "TODOS" ,hora: "00:00", titulo: "HACKATHON" },
+
     ]
   }
 ];
@@ -164,7 +144,7 @@ grid.innerHTML = workshops.map(w => `
         <span class="organizer">
           Organizado Por <strong>${w.organizer}</strong>
         </span>
-        <a href="${w.link}" class="btn-buy">Inscreva-se</a>
+        <a href="${w.link}" class="btn-buy" target="_blank">Inscreva-se</a>
       </div>
     </div>
   </article>
@@ -188,6 +168,7 @@ scheduleGrid.innerHTML = cronograma.map(dia => `
     <ul class="schedule-list">
       ${dia.eventos.map(ev => `
         <li>
+          <strong>${ev.classificacao}</strong>
           <strong>${ev.hora}</strong>
           <span>${ev.titulo}</span>
         </li>
@@ -199,53 +180,22 @@ scheduleGrid.innerHTML = cronograma.map(dia => `
 // 1. Dados da equipe (Mesma estrutura)
 const teamMembers = [
   {
-    name: "Dra. Sarah M.",
-    role: "Coord. Geral",
-    photo: "../src/time/ex.jpg",
-    bgColor: "#fff7cd", 
-    maskColor: "#ffc107", // Usado agora apenas para a forma do fundo
-    social: { linkedin: "#", instagram: "#", github: "#" }
-  },
-  {
-    name: "Alex Chen",
-    role: "Líder Técnico",
-    photo: "https://i.pravatar.cc/300?img=33",
+    name: "João Mira",
+    role: "Líder da LATEC",
+    photo: "src/img/jmira.jpg",
     bgColor: "#d0f0fd", 
     maskColor: "#2196f3",
-    social: { linkedin: "#", instagram: "#", github: "#" }
+    social: { linkedin: "https://www.linkedin.com/in/jo%C3%A3o-mira/", github: "https://github.com/jaomira" }
   },
   {
-    name: "Maya Patel",
-    role: "Oficinas",
-    photo: "https://i.pravatar.cc/300?img=29",
+    name: "Giovanna Araujo",
+    role: "Vice-Líder da LATEC",
+    photo: "src/img/giovanna.jpeg",
     bgColor: "#fddde6", 
-    maskColor: "#e91e63",
-    social: { linkedin: "#", instagram: "#", github: "#" }
+    maskColor: "#ffa6c4",
+    social: { linkedin: "https://www.linkedin.com/in/giovanna-oliveira-araujo-9b0bb7323/", github: "https://github.com/NanaGio" }
   },
-  {
-    name: "James W.",
-    role: "Institucional",
-    photo: "https://i.pravatar.cc/300?img=12",
-    bgColor: "#e2f6ca", 
-    maskColor: "#8bc34a",
-    social: { linkedin: "#", instagram: "#", github: "#" }
-  },
-   {
-    name: "Léa Vincent",
-    role: "Design",
-    photo: "https://i.pravatar.cc/300?img=45",
-    bgColor: "#d7effe", 
-    maskColor: "#00bcd4",
-    social: { linkedin: "#", instagram: "#", github: "#" }
-  },
-   {
-    name: "Théo Faure",
-    role: "Marketing",
-    photo: "https://i.pravatar.cc/300?img=68",
-    bgColor: "#ede7f6", 
-    maskColor: "#673ab7",
-    social: { linkedin: "#", instagram: "#", github: "#" }
-  }
+
 ];
 function createCardHTML(member, index) {
   return `
@@ -258,9 +208,8 @@ function createCardHTML(member, index) {
         <h3>${member.name}</h3>
         <span>${member.role}</span>
         <div class="social-row">
-          <a href="${member.social.linkedin}" class="social-btn"><i data-lucide="linkedin"></i></a>
-          <a href="${member.social.instagram}" class="social-btn"><i data-lucide="instagram"></i></a>
-          <a href="${member.social.github}" class="social-btn"><i data-lucide="github"></i></a>
+          <a href="${member.social.linkedin}" class="social-btn" target="_blank"><i data-lucide="linkedin"></i></a>
+          <a href="${member.social.github}" class="social-btn" target="_blank"><i data-lucide="github"></i></a>
         </div>
       </div>
     </div>
@@ -287,20 +236,20 @@ if (track) {
 // Usei tamanhos diferentes nas URLs (ex: 500x700, 500x400) para criar o visual "quebrado/dinâmico"
 const galleryData = [
   // Lote 1
-  { id: 1, src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=800&fit=crop", caption: "Palestra Magna: O Futuro da IA", date: "02 Mar 2024" },
-  { id: 2, src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&h=400&fit=crop", caption: "Networking no Coffee Break", date: "02 Mar 2024" },
-  { id: 3, src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=600&fit=crop", caption: "Hackathon: Equipes Focadas", date: "04 Mar 2024" },
-  { id: 4, src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600&h=750&fit=crop", caption: "Workshop de React Avançado", date: "03 Mar 2024" },
-  { id: 5, src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=800&fit=crop", caption: "Auditório Principal Lotado", date: "02 Mar 2024" },
-  { id: 6, src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=800&fit=crop", caption: "Mentoria com Especialistas", date: "05 Mar 2024" },
+  { id: 1, src: "src/img/evento1.jpeg",  date: "2025" },
+  { id: 2, src: "src/img/evento2.jpeg",  date: "2025" },
+  { id: 3, src: "src/img/evento3.jpeg",  date: "2025" },
+  { id: 4, src: "src/img/evento4.jpeg",  date: "2025" },
+  { id: 5, src: "src/img/evento5.jpeg",  date: "2025" },
+ 
   
   // Lote 2 (Carregar Mais)
-  { id: 7, src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop", caption: "Mesa Redonda: Mulheres na TI", date: "03 Mar 2024" },
-  { id: 8, src: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=800&fit=crop", caption: "Momentos de Descontração", date: "04 Mar 2024" },
-  { id: 9, src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&h=450&fit=crop", caption: "Reunião de Líderes de Comunidade", date: "06 Mar 2024" },
-  { id: 10, src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=900&fit=crop", caption: "Premiação dos Vencedores", date: "06 Mar 2024" },
-  { id: 11, src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop", caption: "Time de Organização", date: "01 Mar 2024" },
-  { id: 12, src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=600&fit=crop", caption: "Brainstorming Criativo", date: "05 Mar 2024" }
+  { id: 7, src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop", date: "03 Mar 2024" },
+  { id: 8, src: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&h=800&fit=crop", date: "04 Mar 2024" },
+  { id: 9, src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&h=450&fit=crop", date: "06 Mar 2024" },
+  { id: 10, src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=900&fit=crop", date: "06 Mar 2024" },
+  { id: 11, src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop", date: "01 Mar 2024" },
+  { id: 12, src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=600&fit=crop", date: "05 Mar 2024" }
 ];
 
 const itemsPerPage = 6;
@@ -317,11 +266,10 @@ function renderGallery() {
   const itemsRender = galleryData.slice(start, end);
 
   const html = itemsRender.map(item => `
-    <div class="gallery-item" onclick="openModal('${item.src}', '${item.caption}', '${item.date}')">
+    <div class="gallery-item" onclick="openModal('${item.src}', '${item.date}')">
       <img src="${item.src}" alt="${item.caption}">
       <div class="gallery-overlay">
         <span class="gallery-date">${item.date}</span>
-        <p class="gallery-caption">${item.caption}</p>
       </div>
     </div>
   `).join('');

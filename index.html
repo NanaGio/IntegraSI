@@ -36,14 +36,16 @@
     </div>
 
     <nav>
-      <a href="#">Cronograma</a>
-      <a href="#">Oficinas</a>
-      <a href="#">Inscrição</a>
-      <a href="#">Comissão</a>
-      <a href="#">Galeria</a>
+      <a href="#cronograma">Cronograma</a>
+      <a href="#oficinas">Oficinas</a>
+      <a href="#inscricao">Inscrição</a>
+      <a href="#comissao">Comissão</a>
+      <a href="#galeria">Galeria</a>
     </nav>
 
-    <button class="btn-outline">Inscrever-se</button>
+    <a class="btn-outline" href="#inscricao">
+      Inscrever-se
+    </a>
   </header>
 
   <!-- HERO -->
@@ -62,19 +64,15 @@
     </p>
 
     <div class="hero-buttons">
-      <button class="btn-primary">Inscrever-se Agora</button>
-      <button class="btn-secondary">Ver Oficinas</button>
+      <a class="btn-primary" href="#inscricao">Inscrever-se Agora</a>
+      <a class="btn-secondary" href="#oficinas">Ver Oficinas</a>
     </div>
 
     <!-- STATS -->
     <div class="stats">
       <div class="stat">
-        <h2 data-count="50">0</h2>
+        <h2 data-count="6">0</h2>
         <span>Oficinas</span>
-      </div>
-      <div class="stat">
-        <h2 data-count="300">0</h2>
-        <span>Participantes</span>
       </div>
       <div class="stat">
         <h2 data-count="5">0</h2>
@@ -99,7 +97,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Oficinas em Destaque</h2>
-        <p>Aprenda com especialistas da indústria através de oficinas práticas e sessões interativas</p>
+        <p>Aprenda com especialistas da indústria através de oficinas práticas. Oficinas 2026 em breve</p>
       </div>
 
       <div class="workshops-grid" id="workshopsGrid"></div>
@@ -111,7 +109,7 @@
     </div>
   </section>
 
-  <section class="participar-section">
+  <section id="inscricao" class="participar-section">
     <!-- elementos decorativos -->
     <div class="decor decor-left"></div>
     <div class="decor decor-right"></div>
@@ -128,17 +126,6 @@
       </header>
 
       <div class="participar-grid">
-        <article class="participar-card">
-          <div class="icon-box orange">
-            <i data-lucide="users"></i>
-          </div>
-          <h3>Conhecer</h3>
-          <p>
-            Você pode vir participar para aprender a quebrar aquele passo para conhecer
-            como será mais fácil sua vida ao amanhecer da Universidade.
-          </p>
-          <a href="#" class="btn orange">Saber Mais</a>
-        </article>
 
         <article class="participar-card">
           <div class="icon-box blue">
@@ -149,7 +136,7 @@
             Você pode se preparar para aprender assuntos específicos, conhecendo as
             oficinas que serão estudadas na sua série ainda nesse ano.
           </p>
-          <a href="#" class="btn blue">Ver Oficinas</a>
+          <a href="#oficinas" class="btn blue">Ver Oficinas</a>
         </article>
 
         <article class="participar-card">
@@ -161,7 +148,7 @@
             É claro, um clima descontraído, buscando conhecimentos, divertindo e tirando
             as paixões dos gêneros da Engenharia de Sistemas.
           </p>
-          <a href="#" class="btn green">Participar</a>
+          <a href="https://www.sympla.com.br/produtor/latec" class="btn green" target="_blank">Participar</a>
         </article>
 
         <article class="participar-card">
@@ -173,8 +160,21 @@
             Compartilhe seu conhecimento! Proponha uma oficina e ajude outros estudantes
             a aprenderem algo novo.
           </p>
-          <a href="#" class="btn purple">Enviar Proposta</a>
+          <a href="https://forms.gle/rpMMzjvpn6RQQovN9" class="btn purple" target="_blank">Enviar Proposta</a>
         </article>
+
+                <article class="participar-card">
+          <div class="icon-box orange">
+            <i data-lucide="users"></i>
+          </div>
+          <h3>Organização</h3>
+          <p>
+            Se inscreva para participar da comissão Organizadora do evento, 
+            e contribua em atividades diversas!
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7DFgHhwYM8WRTnoLiC7UBrmFlqE-eD7g3WxdoTT-X9rDekQ/viewform" class="btn orange" target="_blank">Saber Mais</a>
+        </article>
+
       </div>
     </div>
   </section>
@@ -193,10 +193,10 @@
     <p>
       Compartilhe sua experiência e contribua para a construção da nossa comunidade acadêmica.
     </p>
-    <button class="btn-primary-glow">
+    <a class="btn-primary-glow" href="https://forms.gle/rpMMzjvpn6RQQovN9" target="_blank">
       Inscrever-se como Participante
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-    </button>
+    </a>
   </div>
 </section>
 

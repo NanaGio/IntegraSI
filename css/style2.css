@@ -134,6 +134,7 @@ nav a:hover {
   border-radius: 999px;
   font-weight: 800;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* =========================
@@ -263,6 +264,8 @@ nav a:hover {
   border: none;
   cursor: pointer;
   box-shadow: 0 12px 32px rgba(203, 251, 69, 0.35);
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -273,6 +276,8 @@ nav a:hover {
   border-radius: var(--radius-lg);
   font-weight: 800;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* =========================
@@ -860,6 +865,7 @@ nav a:hover {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  text-decoration: none;
 }
 
 /* Brilho interno no hover */
@@ -1276,4 +1282,3 @@ nav a:hover {
 .socials-footer i:hover { color: #fff; }
 
 .footer-bottom { text-align: center; border-top: 1px solid #1e293b; padding-top: 24px; font-size: 0.85rem; }
-
