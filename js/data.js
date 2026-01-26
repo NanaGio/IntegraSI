@@ -56,29 +56,130 @@ const galleryData = [
             WORKSHOPS DATA - em andamento
 ===========================================*/
 
+
+
 const workshops = [
   {
-    image: "src/workshops/background.png",
-    title: "N/A",
-    date: "Sex, 15 Mar 2026",
+    id: 1,
+    title: "Algoritmos e Programação",
+    descricao: "Fundamentos da lógica de programação, algoritmos e estruturas de dados. Aprenda a pensar computacionalmente e desenvolver soluções eficientes.",
+    icone: "code",
+    cor: "blue",
+    duration: "120h",
+    professor: ["Prof. João Silva", "Prof. Maria Santos"],
+    image: "../src/workshops/background.png",
+    date: "Segunda-feira, 10 Fev 2026",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
     slots: 40,
-    duration: "4h",
+    audience: "Todos"
+  },
+  {
+    id: 2,
+    title: "Banco de Dados",
+    descricao: "Modelagem, projeto e implementação de bancos de dados relacionais e não relacionais. SQL, NoSQL e boas práticas de armazenamento.",
+    icone: "database",
+    cor: "green",
+    duration: "90h",
+    professor: ["Profª. Maria Santos"],
+    image: "../src/workshops/background.png",
+    date: "Terça-feira, 11 Fev 2026",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/produtor/latec",
+    slots: 40,
     audience: "Veteranos"
   },
   {
-    image: "src/workshops/background.png",
-    title: "N/A",
-    date: "Seg, 18 Mar 2026",
+    id: 3,
+    title: "Engenharia de Software",
+    descricao: "Metodologias ágeis, padrões de projeto, arquitetura de software e gestão de projetos. Desenvolvimento de sistemas robustos e escaláveis.",
+    icone: "settings",
+    cor: "purple",
+    duration: "120h",
+    professor: ["Prof. Carlos Oliveira"],
+    image: "../src/workshops/background.png",
+    date: "Quarta-feira, 12 Fev 2026",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 120,
-    duration: "8h",
+    slots: 40,
     audience: "Todos"
+  },
+  {
+    id: 4,
+    title: "Redes de Computadores",
+    descricao: "Fundamentos de redes, protocolos TCP/IP, segurança de rede, arquitetura de redes e administração de sistemas.",
+    icone: "network",
+    cor: "orange",
+    duration: "90h",
+    professor: ["Prof. Ana Costa"],
+    image: "../src/workshops/background.png",
+    date: "Quinta-feira, 13 Fev 2026",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/produtor/latec",
+    slots: 40,
+    audience: "Veteranos"
+  },
+  {
+    id: 5,
+    title: "Inteligência Artificial",
+    descricao: "Machine Learning, Deep Learning, processamento de linguagem natural e visão computacional. Aplicações práticas de IA.",
+    icone: "brain",
+    cor: "primary",
+    duration: "60h",
+    professor: ["Prof. Roberto Lima"],
+    image: "../src/workshops/background.png",
+    date: "Sexta-feira, 14 Fev 2026",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/produtor/latec",
+    slots: 40,
+    audience: "Todos"
+  },
+  {
+    id: 6,
+    title: "Segurança da Informação",
+    descricao: "Criptografia, segurança de sistemas, ética hacker, auditoria de segurança e conformidade com normas internacionais.",
+    icone: "shield",
+    cor: "red",
+    duration: "60h",
+    professor: ["Prof. Juliana Ferreira"],
+    image: "../src/workshops/background.png",
+    date: "Segunda-feira, 17 Fev 2026",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/produtor/latec",
+    slots: 40,
+    audience: "Veteranos"
+  },
+  {
+    id: 7,
+    title: "Desenvolvimento Web",
+    descricao: "HTML, CSS, JavaScript, frameworks modernos (React, Node.js), APIs REST e desenvolvimento full-stack.",
+    icone: "globe",
+    cor: "blue",
+    duration: "90h",
+    professor: ["Prof. Marcos Almeida"],
+    image: "../src/workshops/background.png",
+    date: "Terça-feira, 18 Fev 2026",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/produtor/latec",
+    slots: 40,
+    audience: "Todos"
+  },
+  {
+    id: 8,
+    title: "Sistemas Operacionais",
+    descricao: "Linux, Windows Server, virtualização, containers Docker, Kubernetes e administração de infraestrutura.",
+    icone: "server",
+    cor: "gray",
+    duration: "60h",
+    professor: ["Prof. Pedro Rodrigues", "Profª. Ana Costa"],
+    image: "../src/workshops/background.png",
+    date: "Quarta-feira, 19 Fev 2026",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/produtor/latec",
+    slots: 40,
+    audience: "Veteranos"
   }
 ];
-
 
 /*===========================================
             CRONOGRAMA DATA - em andamento
