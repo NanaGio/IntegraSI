@@ -71,7 +71,7 @@ const workshops = [
     date: "Segunda-feira, 10 Fev 2026",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
+    slots: 10,
     audience: "Todos"
   },
   {

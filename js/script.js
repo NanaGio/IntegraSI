@@ -63,7 +63,7 @@ sections.forEach(sec => observer.observe(sec));
 
 
 
-grid.innerHTML = workshops.map(w => `
+grid.innerHTML = workshops.filter(w => w.slots > 0).slice(0, 6).map(w => `
   <article class="workshop-card">
     <div class="workshop-image">
       <img src="${w.image}" alt="${w.title}">
@@ -259,14 +259,34 @@ document.addEventListener('DOMContentLoaded', () => {
     question.addEventListener('click', () => {
       const item = question.parentElement;
       const isActive = item.classList.contains('active');
-      
+
       // Fecha todas as outras
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-      
+
       // Abre a clicada se não estava ativa
       if (!isActive) {
         item.classList.add('active');
       }
     });
+  });
+});
+
+// HAMBURGER MENU FUNCTION
+function toggleMenu() {
+  const nav = document.querySelector('.header nav');
+  const hamburger = document.querySelector('.hamburger');
+  const overlay = document.querySelector('.nav-overlay');
+
+  nav.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  overlay.classList.toggle('active');
+}
+
+// Close menu when clicking on nav links
+document.querySelectorAll('.header nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      toggleMenu();
+    }
   });
 });

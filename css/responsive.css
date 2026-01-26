@@ -1,0 +1,503 @@
+/* =========================================
+   RESPONSIVE STYLES - IntegraSI 2026
+   ========================================= */
+
+/* =========================================
+   NAVIGATION - HAMBURGER MENU
+   ========================================= */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 20px;
+    position: relative;
+  }
+
+  .header .logo img {
+    width: 120px !important;
+  }
+
+  .header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .header nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    background: rgb(15,15,75,0.8);
+    backdrop-filter: blur(15px);
+  }
+
+  .header nav a {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #374151;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+
+  .header nav.active a {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .header nav a:hover {
+    color: var(--primary);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .header .btn-outline {
+    display: none;
+  }
+
+  /* Hamburger Button */
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger span:nth-child(1) { top: 0; }
+  .hamburger span:nth-child(2) { top: 10px; }
+  .hamburger span:nth-child(3) { top: 20px; }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+
+  /* Overlay */
+  .nav-overlay {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100%);
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px 60px;
+    text-align: center;
+  }
+
+  .hero h1 img {
+    width: 80vw !important;
+    max-width: 300px;
+  }
+
+  .hero .subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .stats {
+    margin-top: 40px;
+  }
+
+  .stat h2 {
+    font-size: 2rem;
+  }
+
+  .stat span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 img {
+    width: 90vw !important;
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* =========================================
+   SCHEDULE SECTION
+   ========================================= */
+
+@media (max-width: 768px) {
+  .schedule-grid {
+    gap: 24px;
+  }
+}
+
+/* =========================================
+   WORKSHOPS SECTION
+   ========================================= */
+
+@media (max-width: 640px) {
+  .workshop-image img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workshops-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .workshop-card {
+    margin: 0 10px;
+  }
+}
+
+/* =========================================
+   PARTICIPE SECTION
+   ========================================= */
+
+@media (max-width: 1024px) {
+  .participar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .participar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .participar-header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .participar-section {
+    padding: 80px 0;
+  }
+
+  .participar-header {
+    margin-bottom: 60px;
+  }
+
+  .participar-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .participar-header p {
+    font-size: 1.1rem;
+  }
+
+  .participar-card {
+    padding: 32px 24px;
+  }
+}
+
+/* =========================================
+   CTA VETERANOS SECTION
+   ========================================= */
+
+@media (max-width: 768px) {
+  .cta-content-glass {
+    padding: 32px 24px;
+  }
+  .cta-content-glass h2 {
+    font-size: 2rem;
+  }
+}
+
+/* =========================================
+   TEAM SECTION
+   ========================================= */
+
+@media (max-width: 768px) {
+  .carousel-viewport {
+    height: 400px;
+  }
+
+  .team-card {
+    min-width: 280px;
+  }
+}
+
+/* =========================================
+   GALLERY SECTION
+   ========================================= */
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    column-count: 1;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   FAQ SECTION
+   ========================================= */
+
+@media (min-width: 768px) {
+  .faq-page .faqs-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faqs-container {
+    gap: 16px;
+  }
+
+  .faq-item {
+    margin: 0 10px;
+  }
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 16px;
+  }
+
+  .socials-footer {
+    justify-content: center;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .logo img {
+    width: 120px !important;
+  }
+
+  .footer-bottom {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* =========================================
+   CURSOS PAGE
+   ========================================= */
+
+@media (max-width: 768px) {
+  .cursos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .curso-card {
+    margin: 0 10px;
+  }
+
+  .curso-content {
+    padding: 20px;
+  }
+
+  .curso-meta {
+    gap: 12px;
+  }
+
+  .meta-item {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .curso-footer {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .btn-enroll {
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   MODAL
+   ========================================= */
+
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 20px;
+    max-width: calc(100vw - 40px);
+  }
+
+  .modal-content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* =========================================
+   GENERAL RESPONSIVE RULES
+   ========================================= */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+  }
+
+  .center-btn {
+    margin: 40px 20px 0;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-outline-dark {
+    padding: 14px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-outline-dark {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY - FOCUS STATES
+   ========================================= */
+
+@media (max-width: 768px) {
+  .hamburger:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  .header nav a:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}

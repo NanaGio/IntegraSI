@@ -15,6 +15,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
 
@@ -47,7 +48,17 @@
     <a class="btn-outline" href="../index.html#inscricao">
       Inscrever-se
     </a>
+
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
+
+  <!-- Navigation Overlay -->
+  <div class="nav-overlay" onclick="toggleMenu()"></div>
 
   <!-- CURSOS -->
   <section id="cursos" class="section-gray">
@@ -129,6 +140,7 @@
 
   <script src="../js/data.js"></script>
   <script src="../js/cursos.js"></script>
+  <script src="../js/script.js"></script>
   <script>
     lucide.createIcons();
   </script>

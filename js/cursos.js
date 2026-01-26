@@ -3,7 +3,7 @@
 function renderCursos() {
   const cursosGrid = document.getElementById('cursosGrid');
 
-  cursosGrid.innerHTML = workshops.map(c => `
+  cursosGrid.innerHTML = workshops.filter(c => c.slots > 0).map(c => `
     <div class="curso-card">
       <div class="curso-image-wrapper">
         <img src="${c.image}" alt="${c.title}" class="curso-image">
