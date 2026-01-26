@@ -545,6 +545,32 @@ nav a:hover {
   align-items: center;
 }
 
+.workshop-card.only-message {
+  min-height: 220px;
+  font-size: 2rem;
+  color: #2563eb;
+  background: #f8fafc;
+  border: 2px dashed #2563eb;
+  box-shadow: none;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .workshop-card.only-message {
+    font-size: 1.2rem;
+    min-height: 120px;
+    max-width: 95vw;
+    padding: 16px;
+  }
+}
+
+
 /* extra info */
 .workshop-extra {
   margin-top: 18px;
