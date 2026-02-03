@@ -247,46 +247,46 @@ const cronograma = [
 
 const teamMembers = [
   
-  // {
-  //   name: "João Mira",
-  //   role: "Líder da LATEC",
-  //   photo: "src/time/jmira.jpg",
-  //   bgColor: "#d0f0fd", 
-  //   maskColor: "#2196f3",
-  //   social: { linkedin: "https://www.linkedin.com/in/jo%C3%A3o-mira/", github: "https://github.com/jaomira" }
-  // },
-  // {
-  //   name: "Giovanna Araujo",
-  //   role: "Vice-Líder da LATEC",
-  //   photo: "src/time/giovanna.jpeg",
-  //   bgColor: "#fddde6", 
-  //   maskColor: "#ffa6c4",
-  //   social: { linkedin: "https://www.linkedin.com/in/giovanna-oliveira-araujo-9b0bb7323/", github: "https://github.com/NanaGio" }
-  // },
-  //  {
-  //   name: "Carlos H. Santiago",
-  //   role: "Gestão dos labs",
-  //   photo: "src/time/caos.jpg",
-  //   bgColor: "#c4db40", 
-  //   maskColor: "#8588de",
-  //   social: { linkedin: "https://www.linkedin.com/in/carlos-h-santiago/en", github: "https://github.com/CarlosH-Santiago" }
-  // },
-  //  {
-  //   name: "Henrique Estrela",
-  //   role: "Gestão dos labs",
-  //   photo: "src/time/estrela.jpeg",
-  //   bgColor: "#ca9610", 
-  //   maskColor: "#ca9610",
-  //   social: { linkedin: "https://www.linkedin.com/in/henrique-estrela-21163921a/", github: "https://github.com/Henrique-Estrela" }
-  // },
-  // {
-  //   name: "Rafael Brasil",
-  //   role: "Coordenador do curso",
-  //   photo: "src/time/rafaelB.jpeg",
-  //   bgColor: "#53f31e", 
-  //   maskColor: "#53f31e",
-  //   social: { linkedin: "", github: "" }
-  // },
+   {
+     name: "João Mira",
+     role: "Líder da LATEC",
+     photo: "src/time/jmira.jpg",
+     bgColor: "#d0f0fd", 
+     maskColor: "#2196f3",
+     social: { linkedin: "https://www.linkedin.com/in/jo%C3%A3o-mira/", github: "https://github.com/jaomira" }
+   },
+   {
+     name: "Giovanna Araujo",
+     role: "Vice-Líder da LATEC",
+     photo: "src/time/giovanna.jpeg",
+     bgColor: "#fddde6", 
+     maskColor: "#ffa6c4",
+     social: { linkedin: "https://www.linkedin.com/in/giovanna-oliveira-araujo-9b0bb7323/", github: "https://github.com/NanaGio" }
+   },
+    {
+     name: "Carlos H. Santiago",
+     role: "Gestão dos labs",
+     photo: "src/time/caos.jpg",
+     bgColor: "#c4db40", 
+     maskColor: "#8588de",
+     social: { linkedin: "https://www.linkedin.com/in/carlos-h-santiago/en", github: "https://github.com/CarlosH-Santiago" }
+   },
+    {
+     name: "Henrique Estrela",
+     role: "Gestão dos labs",
+     photo: "src/time/estrela.jpeg",
+     bgColor: "#ca9610", 
+     maskColor: "#ca9610",
+     social: { linkedin: "https://www.linkedin.com/in/henrique-estrela-21163921a/", github: "https://github.com/Henrique-Estrela" }
+   },
+   {
+    name: "Rafael Brasil",
+    role: "Coordenador do curso",
+     photo: "src/time/rafaelB.jpeg",
+     bgColor: "#53f31e", 
+     maskColor: "#53f31e",
+     social: { linkedin: "", github: "" }
+   },
 
 ];
 

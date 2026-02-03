@@ -150,7 +150,7 @@ function createCardHTML(member, index) {
   `;
 }
 
-function createJoinCardHTML() {
+/*function createJoinCardHTML() {
   return `
     <div class="cta-content-glass">
     <div class="glow-border"></div>
@@ -161,7 +161,7 @@ function createJoinCardHTML() {
     </a>
   </div>
   `;
-}
+}*/
 
 // 3. Renderização e Lógica de Loop Infinito
 
