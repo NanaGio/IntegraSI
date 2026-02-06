@@ -249,44 +249,182 @@ const teamMembers = [
   
    {
      name: "João Mira",
-     role: "Líder da LATEC",
+     role: "Líder da LATEC / Divulgação e Mídias Digitais",
      photo: "src/time/jmira.jpg",
      bgColor: "#d0f0fd", 
      maskColor: "#2196f3",
      social: { linkedin: "https://www.linkedin.com/in/jo%C3%A3o-mira/", github: "https://github.com/jaomira" }
    },
+   
    {
      name: "Giovanna Araujo",
-     role: "Vice-Líder da LATEC",
+     role: "Vice-Líder da LATEC / Divulgação e Mídias Digitais",
      photo: "src/time/giovanna.jpeg",
      bgColor: "#fddde6", 
      maskColor: "#ffa6c4",
      social: { linkedin: "https://www.linkedin.com/in/giovanna-oliveira-araujo-9b0bb7323/", github: "https://github.com/NanaGio" }
    },
-    {
+
+   {
      name: "Carlos H. Santiago",
-     role: "Gestão dos labs",
+     role: "Financeiro e Organização das Rifas",
      photo: "src/time/caos.jpg",
      bgColor: "#c4db40", 
      maskColor: "#8588de",
      social: { linkedin: "https://www.linkedin.com/in/carlos-h-santiago/en", github: "https://github.com/CarlosH-Santiago" }
    },
-    {
+
+   {
      name: "Henrique Estrela",
-     role: "Gestão dos labs",
+     role: "Divulgação e Mídias Digitais",
      photo: "src/time/estrela.jpeg",
      bgColor: "#ca9610", 
      maskColor: "#ca9610",
      social: { linkedin: "https://www.linkedin.com/in/henrique-estrela-21163921a/", github: "https://github.com/Henrique-Estrela" }
    },
+
    {
     name: "Rafael Brasil",
-    role: "Coordenador do curso",
+    role: "Coordenador de Si da UNEX",
      photo: "src/time/rafaelB.jpeg",
      bgColor: "#53f31e", 
      maskColor: "#53f31e",
+     social: { linkedin: "https://www.linkedin.com/in/rafael-brasil21", github: "https://www.linkedin.com/in/rafael-brasil21" }
+   },
+
+   {
+    name: "Lucas Silva",
+    role: "Professor e Coordenador do evento",
+     photo: "src/time/lucasS.jpeg",
+     bgColor: "#DEE5E1",  
+     maskColor: "#DEE5E1",
      social: { linkedin: "", github: "" }
    },
 
+   {
+    name: "Gustavo Nonato",
+    role: "Configuração e Suporte a Oficinas e Laboratórios",
+     photo: "src/time/nonato.jpeg",
+     bgColor: "#AE2402",  
+     maskColor: "#AE2402",
+     social: { linkedin: "https://www.linkedin.com/in/codiguss/", github: "https://github.com/codiguss" }
+   },
+
+   {
+    name: "Chaira Santos",
+    role: "Organizadora do Hackathon",
+     photo: "src/time/chairaS.jpeg",
+     bgColor: "#D6C6E7",  
+     maskColor: "#D6C6E7",
+     social: { linkedin: "", github: "" }
+   },
+
+   {
+    name: "Antonio Gabriel",
+    role: "Apoio do Hackathon",
+     photo: "src/time/antonio.jpeg",
+     bgColor: "#DABA36",  
+     maskColor: "#DABA36",
+     social: { linkedin: "https://www.linkedin.com/in/antonio-gabriel-gomes-falc%C3%A3o-do-nascimento-a53a95306", github: "https://github.com/copperlamb78" }
+   },
+
+   {
+    name: "Rebeca Helen",
+    role: "Coffee Break e Decoração",
+     photo: "src/time/rebeca.jpeg",
+     bgColor: "#2CF7C5",  
+     maskColor: "#2CF7C5",
+     social: { linkedin: "https://www.linkedin.com/in/rebeca-helen-6340a22b3", github: "https://github.com/rebecaheIen" }
+   },
+
+   {
+    name: "Amanda Ellen",
+    role: "Divulgação e Mídias Digitais ",
+     photo: "src/time/amanda.jpeg",
+     bgColor: "#865DE3",  
+     maskColor: "#865DE3",
+     social: { linkedin: "https://www.linkedin.com/in/amanda-lima-dev", github: "https://github.com/ellyhtts" }
+   },
+
+   {
+    name: "Danilo Santos",
+    role: "Apoio do Hackathon",
+     photo: "src/time/danilo.jpeg",
+     bgColor: "#2A4725",  
+     maskColor: "#2A4725",
+     social: { linkedin: " https://br.linkedin.com/in/danilo-santos-b220652b0", github: "https://github.com/Santts075" }
+   },
+
+   {
+    name: "Fatima Pereira",
+    role: "Financeiro e Organização das Rifas",
+     photo: "src/time/fatima.jpeg",
+     bgColor: "#653B89",  
+     maskColor: "#653B89",
+     social: { linkedin: "", github: "" }
+   },
+
+   {
+    name: "Giovanna Rodrigues",
+    role: "Coffee Break e Decoração",
+     photo: "src/time/giovanna2.jpeg",
+     bgColor: "#FB9FD2",  
+     maskColor: "#FB9FD2",
+     social: { linkedin: "https://www.linkedin.com/in/giorodriguss/", github: "https://github.com/giorodriguss" }
+   },
+
+   {
+    name: "Gustavo Costa",
+    role: "Apoio",
+     photo: "src/time/gustavo.jpeg",
+     bgColor: "#FFE135",  
+     maskColor: "#FFE135",
+     social: { linkedin: "", github: "" }
+   },
+
+   {
+    name: "Andrey Mota",
+    role: "Configuração e Suporte a Oficinas e Laboratórios",
+     photo: "src/time/andrey.jpeg",
+     bgColor: "#BD0841",  
+     maskColor: "#BD0841",
+     social: { linkedin: "https://www.linkedin.com/in/andrey-mota-6567b1334", github: "https://github.com/dreyszk" }
+   },
+
+   {
+    name: "Louise de Souza",
+    role: "Configuração e Suporte a Oficinas e Laboratórios",
+     photo: "src/time/louise.jpeg",
+     bgColor: "#99BB73",  
+     maskColor: "#99BB73",
+     social: { linkedin: "https://www.linkedin.com/in/louise-santino-71339430b", github: "https://github.com/louisesantino" }
+   },
+
+   {
+    name: "Leonardo Freitas",
+    role: "Coffee Break e Decoração",
+     photo: "src/time/leonardo.jpeg",
+     bgColor: "#25C1C0",  
+     maskColor: "#25C1C0",
+     social: { linkedin: "", github: "" }
+   },
+
+   {
+    name: "Gabriel Da Silva",
+    role: "Configuração e suporte a oficinas e laboratórios",
+     photo: "src/time/gabriel.jpeg",
+     bgColor: "#496571",  
+     maskColor: "#496571",
+     social: { linkedin: "", github: "" }
+   },
+
+   {
+    name: "Lucas Oliveira",
+    role: "Configuração e suporte a oficinas e laboratórios",
+     photo: "src/time/lucasO.jpeg",
+     bgColor: "#CEA49A",  
+     maskColor: "#CEA49A",
+     social: { linkedin: "https://www.linkedin.com/in/lucas-oliveira-01331a265/", github: "https://github.com/lucasolivra1" }
+   },
 ];
 
