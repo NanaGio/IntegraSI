@@ -150,20 +150,6 @@ function createCardHTML(member, index) {
   `;
 }
 
-/*function createJoinCardHTML() {
-  return `
-    <div class="cta-content-glass">
-    <div class="glow-border"></div>
-    <h1>Inscrições Abertas</h1>
-    <a class="btn-primary-glow" href="https://forms.gle/Zw79s4dVDyG2tQKy9" target="_blank">
-      Venha Fazer Parte
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-    </a>
-  </div>
-  `;
-}*/
-
-// 3. Renderização e Lógica de Loop Infinito
 
 if (track) {
   const viewport = track.parentElement; // .carousel-viewport

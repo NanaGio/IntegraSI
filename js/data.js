@@ -294,11 +294,11 @@ const teamMembers = [
 
    {
     name: "Lucas Silva",
-    role: "Professor e Coordenador do evento",
+    role: "Professor e Organizador do evento",
      photo: "src/time/lucasS.jpeg",
      bgColor: "#DEE5E1",  
      maskColor: "#DEE5E1",
-     social: { linkedin: "", github: "" }
+     social: { linkedin: "https://www.linkedin.com/in/lasilvas", github: "https://github.com/lasilva" }
    },
 
    {
@@ -361,7 +361,7 @@ const teamMembers = [
      photo: "src/time/fatima.jpeg",
      bgColor: "#653B89",  
      maskColor: "#653B89",
-     social: { linkedin: "", github: "" }
+     social: { linkedin: "https://www.linkedin.com/in/f%C3%A1tima-pinho-9086562b3/", github: "https://github.com/fatimapsp" }
    },
 
    {
@@ -379,7 +379,7 @@ const teamMembers = [
      photo: "src/time/gustavo.jpeg",
      bgColor: "#FFE135",  
      maskColor: "#FFE135",
-     social: { linkedin: "", github: "" }
+     social: { linkedin: "https://www.linkedin.com/in/gustavo-costa-5878591b4/", github: "https://github.com/brguzz" }
    },
 
    {
@@ -415,7 +415,7 @@ const teamMembers = [
      photo: "src/time/gabriel.jpeg",
      bgColor: "#496571",  
      maskColor: "#496571",
-     social: { linkedin: "", github: "" }
+     social: { linkedin: "https://www.linkedin.com/in/gabriel-silva-61b034219", github: "https://github.com/bielav" }
    },
 
    {
