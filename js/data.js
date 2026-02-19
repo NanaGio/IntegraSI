@@ -59,8 +59,68 @@ const galleryData = [
 
 
 const workshops = [
-  {
+      {
     id: 1,
+    title: "ABERTURA - Ingresso Geral",
+    descricao: "Integra-SI",
+    icone: "code",
+    cor: "blue",
+    duration: "02 a 07 de março",
+    professor: ["Valeria Soares"],
+    image: "../src/workshops/background.png",
+    date: "02/03 a 07/03",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    slots: 100,
+    audience: "Todos"
+  },
+    {
+    id: 1,
+    title: "PALESTRA - Anderson",
+    descricao: "Palestra de abertura da Integra-SI",
+    icone: "code",
+    cor: "blue",
+    duration: "1h 30min",
+    professor: ["Valeria Soares"],
+    image: "../src/workshops/background.png",
+    date: "02/03",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    slots: 100,
+    audience: "Todos"
+  },
+  {
+    id: 2,
+    title: "PALESTRA - Thaiany Santana",
+    descricao: "Palestra de abertura da Integra-SI",
+    icone: "code",
+    cor: "blue",
+    duration: "1h 30min",
+    professor: ["Valeria Soares"],
+    image: "../src/workshops/background.png",
+    date: "02/03",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    slots: 100,
+    audience: "Todos"
+  },
+  {
+    id: 3,
+    title: "PALESTRA - Matheus Borges",
+    descricao: "Palestra pré-hackaton da Integra-SI",
+    icone: "code",
+    cor: "blue",
+    duration: "1h 30min",
+    professor: ["Valeria Soares"],
+    image: "../src/workshops/background.png",
+    date: "06/03",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    slots: 100,
+    audience: "Todos"
+  },
+  {
+    id: 4,
     title: "Hands-on: Construindo Aplicações Web com Angular",
     descricao: "Neste minicurso, vamos construir uma interface real utilizando Angular, " +
       "um dos frameworks front-end mais utilizados no mercado. A proposta é aprender fazendo: " +
@@ -72,12 +132,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "05/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 30,
     audience: "Veteranos"
   },
   {
-    id: 2,
+    id: 5,
     title: "Quando a automação vira necessidade | TypeScript e Playwright",
     descricao: "Será apresentado no curso como fazer automações, com base sólida na realidade e meus conhecimentos no maior escritório de contabilidade da cidade. " +
                 "Usando TypeScript e Playwright.",
@@ -88,12 +148,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "05/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 20,
     audience: "Veteranos"
   },
   {
-    id: 3,
+    id: 6,
     title: "Do Ensino Médio à Faculdade de TI: Primeiros Passos no Curso de Sistema de Informação",
     descricao: "Oficina voltada para acolher e orientar os calouros do curso de Sistema de Informação, abordando a transição do ensino médio para a faculdade," +
                 "a rotina acadêmica, organização dos estudos, adaptação emocional e apresentação de um projeto de sistema em desenvolvimento," +
@@ -105,12 +165,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "05/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 80,
     audience: "Calouros"
   },
   {
-    id: 4,
+    id: 7,
     title: "Do Código ao Mundo Real: Introdução ao Software Embarcado",
     descricao: "Nesta oficina, apresentarei uma introdução ao conceito de software embarcado, abordando como programas podem ser executados diretamente em dispositivos físicos para realizar funções específicas no mundo real",
     icone: "network",
@@ -120,12 +180,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 30,
     audience: "Veteranos"
   },
   {
-    id: 5,
+    id: 8,
     title: "O próximo da fila: Uma imersão na Estrutura de Dados e Algoritmos de Ordenação",
     descricao: "O tema da oficina será explicando uma estrutura de dados e um algoritmo de ordenação, de forma exemplificada com demonstrações visuais, focando na lógica em si, sem criações de código.",
     icone: "brain",
@@ -135,12 +195,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 30,
     audience: "Calouros"
   },
   {
-    id: 6,
+    id: 9,
     title: "Do Prompt ao Protótipo: Criando Interfaces com Figma + IA",
     descricao: "Criptografia, segurança de sistemas, ética hacker, auditoria de segurança e conformidade com normas internacionais.",
     icone: "shield",
@@ -150,12 +210,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "04/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 30,
     audience: "Veteranos"
   },
   {
-    id: 7,
+    id: 10,
     title: " Primeiros Passos no Dev: Git, GitHub e Organização de Estudos com IA",
     descricao: "O curso visa capacitar os ingressantes de Sistemas de Informação nas ferramentas fundamentais para o desenvolvimento moderno: Git e GitHub. Durante a oficina, abordaremos desde a instalação do ambiente e comandos essenciais até a criação de repositórios estratégicos. O objetivo é incentivar que, desde o primeiro semestre, os alunos construam seu portfólio técnico e compreendam a dinâmica de projetos colaborativos através de um exercício prático em Python." +
       "Além da técnica, o curso oferecerá um módulo focado em produtividade acadêmica, demonstrando como utilizar o NotebookLM para organizar resumos e otimizar o estudo das disciplinas do curso.",
@@ -166,12 +226,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "04/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 20,
     audience: "Todos"
   },
   {
-    id: 8,
+    id: 11,
     title: "Lógica de Programação na Prática: Do Zero ao Primeiro Sistema",
     descricao: "A programação é a ferramenta mais poderosa do mundo, mas começar pode ser intimidante. Na oficina Lógica de Programação na Prática, vamos quebrar essa barreira usando o Portugol.",
     icone: "server",
@@ -181,12 +241,12 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 25,
     audience: "Calouros"
   },
     {
-    id: 9,
+    id: 12,
     title: "Git e GitHub além do commit.",
     descricao: "Trazendo temas como: História do Git, Versionamento de Código, Plataforma do GitHub, Porquê o GitHub, GitFlow, Copilot, Ferramentas de DevOps do GitHub, OpenSource e Contribuição, GitHub Actions e CI/CD e um pouco de GitHub Advanced Security",
     icone: "server",
@@ -196,9 +256,24 @@ const workshops = [
     image: "../src/workshops/background.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/produtor/latec",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
     slots: 30,
     audience: "Veteranos"
+  },
+  {
+    id: 13,
+    title: "HACKATHON",
+    descricao: "Hackathon da IntegraSI - Sexta a Sábado",
+    icone: "server",
+    cor: "gray",
+    duration: "20:20 sexta, até 17:00, sábado",
+    professor: ["UNEX"],
+    image: "../src/workshops/background.png",
+    date: "06/03 e 07/03",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    slots: 75,
+    audience: "Veteranos e Calouros"
   }
 ];
 
