@@ -61,125 +61,147 @@ const galleryData = [
 const workshops = [
   {
     id: 1,
-    title: "Algoritmos e Programação",
-    descricao: "Fundamentos da lógica de programação, algoritmos e estruturas de dados. Aprenda a pensar computacionalmente e desenvolver soluções eficientes.",
+    title: "Hands-on: Construindo Aplicações Web com Angular",
+    descricao: "Neste minicurso, vamos construir uma interface real utilizando Angular, " +
+      "um dos frameworks front-end mais utilizados no mercado. A proposta é aprender fazendo: " +
+      "desde a configuração inicial do projeto até a criação de componentes, gerenciamento de rotas e estilização.",
     icone: "code",
     cor: "blue",
-    duration: "120h",
-    professor: ["Prof. João Silva", "Prof. Maria Santos"],
+    duration: "3h 30min",
+    professor: ["Valeria Soares"],
     image: "../src/workshops/background.png",
-    date: "Segunda-feira, 10 Fev 2026",
+    date: "05/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 10,
-    audience: "Todos"
+    slots: 30,
+    audience: "Veteranos"
   },
   {
     id: 2,
-    title: "Banco de Dados",
-    descricao: "Modelagem, projeto e implementação de bancos de dados relacionais e não relacionais. SQL, NoSQL e boas práticas de armazenamento.",
+    title: "Quando a automação vira necessidade | TypeScript e Playwright",
+    descricao: "Será apresentado no curso como fazer automações, com base sólida na realidade e meus conhecimentos no maior escritório de contabilidade da cidade. " +
+                "Usando TypeScript e Playwright.",
     icone: "database",
     cor: "green",
-    duration: "90h",
-    professor: ["Profª. Maria Santos"],
+    duration: "3h 30min",
+    professor: ["Antônio Gabriel"],
     image: "../src/workshops/background.png",
-    date: "Terça-feira, 11 Fev 2026",
+    date: "05/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
+    slots: 20,
     audience: "Veteranos"
   },
   {
     id: 3,
-    title: "Engenharia de Software",
-    descricao: "Metodologias ágeis, padrões de projeto, arquitetura de software e gestão de projetos. Desenvolvimento de sistemas robustos e escaláveis.",
+    title: "Do Ensino Médio à Faculdade de TI: Primeiros Passos no Curso de Sistema de Informação",
+    descricao: "Oficina voltada para acolher e orientar os calouros do curso de Sistema de Informação, abordando a transição do ensino médio para a faculdade," +
+                "a rotina acadêmica, organização dos estudos, adaptação emocional e apresentação de um projeto de sistema em desenvolvimento," +
+                "com o objetivo de motivar e preparar os estudantes para os desafios iniciais da graduação.",
     icone: "settings",
     cor: "purple",
-    duration: "120h",
-    professor: ["Prof. Carlos Oliveira"],
+    duration: "3h 30min",
+    professor: ["Dímilly Coelho Santos "],
     image: "../src/workshops/background.png",
-    date: "Quarta-feira, 12 Fev 2026",
+    date: "05/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
-    audience: "Todos"
+    slots: 80,
+    audience: "Calouros"
   },
   {
     id: 4,
-    title: "Redes de Computadores",
-    descricao: "Fundamentos de redes, protocolos TCP/IP, segurança de rede, arquitetura de redes e administração de sistemas.",
+    title: "Do Código ao Mundo Real: Introdução ao Software Embarcado",
+    descricao: "Nesta oficina, apresentarei uma introdução ao conceito de software embarcado, abordando como programas podem ser executados diretamente em dispositivos físicos para realizar funções específicas no mundo real",
     icone: "network",
     cor: "orange",
-    duration: "90h",
-    professor: ["Prof. Ana Costa"],
+    duration: "3h 30min",
+    professor: ["Anna Beatriz Silva Lima "],
     image: "../src/workshops/background.png",
-    date: "Quinta-feira, 13 Fev 2026",
+    date: "03/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
+    slots: 30,
     audience: "Veteranos"
   },
   {
     id: 5,
-    title: "Inteligência Artificial",
-    descricao: "Machine Learning, Deep Learning, processamento de linguagem natural e visão computacional. Aplicações práticas de IA.",
+    title: "O próximo da fila: Uma imersão na Estrutura de Dados e Algoritmos de Ordenação",
+    descricao: "O tema da oficina será explicando uma estrutura de dados e um algoritmo de ordenação, de forma exemplificada com demonstrações visuais, focando na lógica em si, sem criações de código.",
     icone: "brain",
     cor: "primary",
-    duration: "60h",
-    professor: ["Prof. Roberto Lima"],
+    duration: "3h 30min",
+    professor: ["Rafael Cerqueira"],
     image: "../src/workshops/background.png",
-    date: "Sexta-feira, 14 Fev 2026",
+    date: "03/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
-    audience: "Todos"
+    slots: 30,
+    audience: "Calouros"
   },
   {
     id: 6,
-    title: "Segurança da Informação",
+    title: "Do Prompt ao Protótipo: Criando Interfaces com Figma + IA",
     descricao: "Criptografia, segurança de sistemas, ética hacker, auditoria de segurança e conformidade com normas internacionais.",
     icone: "shield",
     cor: "red",
-    duration: "60h",
-    professor: ["Prof. Juliana Ferreira"],
+    duration: "3h 30min",
+    professor: ["Henrique Estrela"],
     image: "../src/workshops/background.png",
-    date: "Segunda-feira, 17 Fev 2026",
+    date: "04/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
+    slots: 30,
     audience: "Veteranos"
   },
   {
     id: 7,
-    title: "Desenvolvimento Web",
-    descricao: "HTML, CSS, JavaScript, frameworks modernos (React, Node.js), APIs REST e desenvolvimento full-stack.",
+    title: " Primeiros Passos no Dev: Git, GitHub e Organização de Estudos com IA",
+    descricao: "O curso visa capacitar os ingressantes de Sistemas de Informação nas ferramentas fundamentais para o desenvolvimento moderno: Git e GitHub. Durante a oficina, abordaremos desde a instalação do ambiente e comandos essenciais até a criação de repositórios estratégicos. O objetivo é incentivar que, desde o primeiro semestre, os alunos construam seu portfólio técnico e compreendam a dinâmica de projetos colaborativos através de um exercício prático em Python." +
+      "Além da técnica, o curso oferecerá um módulo focado em produtividade acadêmica, demonstrando como utilizar o NotebookLM para organizar resumos e otimizar o estudo das disciplinas do curso.",
     icone: "globe",
     cor: "blue",
-    duration: "90h",
-    professor: ["Prof. Marcos Almeida"],
+    duration: "3h 30min",
+    professor: ["Amanda Ellen"],
     image: "../src/workshops/background.png",
-    date: "Terça-feira, 18 Fev 2026",
+    date: "04/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
+    slots: 20,
     audience: "Todos"
   },
   {
     id: 8,
-    title: "Sistemas Operacionais",
-    descricao: "Linux, Windows Server, virtualização, containers Docker, Kubernetes e administração de infraestrutura.",
+    title: "Lógica de Programação na Prática: Do Zero ao Primeiro Sistema",
+    descricao: "A programação é a ferramenta mais poderosa do mundo, mas começar pode ser intimidante. Na oficina Lógica de Programação na Prática, vamos quebrar essa barreira usando o Portugol.",
     icone: "server",
     cor: "gray",
-    duration: "60h",
-    professor: ["Prof. Pedro Rodrigues", "Profª. Ana Costa"],
+    duration: "3h 30min",
+    professor: ["Gustavo Bezerra", "Carlos Henrique"],
     image: "../src/workshops/background.png",
-    date: "Quarta-feira, 19 Fev 2026",
+    date: "03/03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/produtor/latec",
-    slots: 40,
+    slots: 25,
+    audience: "Calouros"
+  },
+    {
+    id: 9,
+    title: "Git e GitHub além do commit.",
+    descricao: "Trazendo temas como: História do Git, Versionamento de Código, Plataforma do GitHub, Porquê o GitHub, GitFlow, Copilot, Ferramentas de DevOps do GitHub, OpenSource e Contribuição, GitHub Actions e CI/CD e um pouco de GitHub Advanced Security",
+    icone: "server",
+    cor: "gray",
+    duration: "3h 30min",
+    professor: ["Daniel Alonso"],
+    image: "../src/workshops/background.png",
+    date: "03/03",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/produtor/latec",
+    slots: 30,
     audience: "Veteranos"
   }
 ];
+
 
 /*===========================================
             CRONOGRAMA DATA - em andamento
@@ -199,35 +221,34 @@ const cronograma = [
     dia: "Dia 2",
     data: "03 Mar, 2026",
     eventos: [
-      { classificacao: "CALOUROS" ,hora: "18:30", titulo: "CURSO 1" },
-      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 1" },
-      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 2" },
+      { classificacao: "CAL" ,hora: "18:30", titulo: "O próximo da fila: Uma imersão na Estrutura de Dados e Algoritmos de Ordenação" },
+      { classificacao: "VET" ,hora: "18:30", titulo: "Do Código ao Mundo Real: Introdução ao Software Embarcado" },
+      { classificacao: "VET" ,hora: "18:30", titulo: "Lógica de Programação na Prática: Do Zero ao Primeiro Sistema " },
     ]
   },
   {
     dia: "Dia 3",
     data: "04 Mar, 2026",
     eventos: [
-      { classificacao: "CALOUROS" ,hora: "18:30", titulo: "CURSO 2" },
-      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 3" },
-      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 4" },
+      { classificacao: "CAL" ,hora: "18:30", titulo: "Primeiros Passos no Dev: Git, GitHub e Organização de Estudos com IA" },
+      { classificacao: "VET" ,hora: "18:30", titulo: "Git e GitHub além do commit." },
+      { classificacao: "VET" ,hora: "18:30", titulo: "Do Prompt ao Protótipo: Criando Interfaces com Figma + IA" },
     ]
   },
   {
     dia: "Dia 4",
     data: "05 Mar, 2026",
     eventos: [
-      { classificacao: "CALOUROS" ,hora: "18:30", titulo: "CURSO 3" },
-      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 5" },
-      { classificacao: "VETERANOS" ,hora: "18:30", titulo: "CURSO 6" },
+      { classificacao: "CAL" ,hora: "18:30", titulo: "Do Ensino Médio à Faculdade de TI: Primeiros Passos no Curso de Sistema de Informação" },
+      { classificacao: "VET" ,hora: "18:30", titulo: "Primeiros Passos no Dev: Git, GitHub e Organização de Estudos com IA" },
+      { classificacao: "VET" ,hora: "18:30", titulo: "Do Ensino Médio à Faculdade de TI: Primeiros Passos no Curso de Sistema de Informação" },
     ]
   },
   {
     dia: "Dia 5",
     data: "06 Mar, 2026",
     eventos: [
-      { classificacao: "TODOS" ,hora: "18:30", titulo: "Palestra 3" },
-      { classificacao: "TODOS" ,hora: "18:30", titulo: "Palestra 4" },
+      { classificacao: "TODOS" ,hora: "18:30", titulo: "Palestra MATHEUS BORGES" },
       { classificacao: "TODOS" ,hora: "20:20", titulo: "HACKATHON" },
     ]
   },
@@ -235,11 +256,13 @@ const cronograma = [
     dia: "Dia 6",
     data: "07 Mar, 2026",
     eventos: [
-      { classificacao: "TODOS" ,hora: "00:00", titulo: "HACKATHON" },
+      { classificacao: "TODOS" ,hora: "07:00", titulo: "HACKATHON" },
+
 
     ]
   }
 ];
+
 
 /*===========================================
             TIME DATA - processo de iscrição
@@ -313,7 +336,7 @@ const teamMembers = [
    {
     name: "Chaira Santos",
     role: "Organizadora do Hackathon",
-     photo: "src/time/chairaS.jpeg",
+     photo: "src/time/chairaS.jpg",
      bgColor: "#D6C6E7",  
      maskColor: "#D6C6E7",
      social: { linkedin: "", github: "" }
