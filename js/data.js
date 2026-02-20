@@ -315,7 +315,7 @@ const cronograma = [
     data: "05 Mar, 2026",
     eventos: [
       { classificacao: "CAL" ,hora: "18:30", titulo: "Do Ensino Médio à Faculdade de TI: Primeiros Passos no Curso de Sistema de Informação" },
-      { classificacao: "VET" ,hora: "18:30", titulo: "Primeiros Passos no Dev: Git, GitHub e Organização de Estudos com IA" },
+      { classificacao: "VET" ,hora: "18:30", titulo: "Hands-on: Construindo Aplicações Web com Angular" },
       { classificacao: "VET" ,hora: "18:30", titulo: "Do Ensino Médio à Faculdade de TI: Primeiros Passos no Curso de Sistema de Informação" },
     ]
   },
