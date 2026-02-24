@@ -62,7 +62,7 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(sec => observer.observe(sec));
 
 
-/*
+
 grid.innerHTML = workshops.filter(w => w.slots > 0).slice(0, 6).map(w => `
   <article class="workshop-card">
     <div class="workshop-image">
@@ -102,7 +102,7 @@ grid.innerHTML = workshops.filter(w => w.slots > 0).slice(0, 6).map(w => `
     </div>
   </article>
 `).join("");
-*/
+
 
 
 scheduleGrid.innerHTML = cronograma.map(dia => `

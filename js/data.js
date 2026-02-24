@@ -59,21 +59,21 @@ const galleryData = [
 
 
 const workshops = [
-      {
-    id: 1,
+    {
+    id: 0,
     title: "ABERTURA - Ingresso Geral",
     descricao: "Integra-SI",
     icone: "code",
     cor: "blue",
     duration: "02 a 07 de março",
     professor: ["Valeria Soares"],
-    image: "../src/workshops/background.png",
+    image: "	https://images.sympla.com.br/69684a40bd474-lg.jpg",
     date: "02/03 a 07/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-2026-1-abertura/3315972?algoliaID=e8bf2c3072f6aa7f419838e2ca9b8917&share_id=copiarlink",
     slots: 100,
     audience: "Todos"
-  },
+    },
     {
     id: 1,
     title: "PALESTRA - Anderson",
@@ -82,28 +82,28 @@ const workshops = [
     cor: "blue",
     duration: "1h 30min",
     professor: ["Valeria Soares"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/699777c5e304c-lg.png",
     date: "02/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-palestra-com-anderson/3276563?algoliaID=e8bf2c3072f6aa7f419838e2ca9b8917&share_id=copiarlink",
     slots: 100,
     audience: "Todos"
   },
-  {
-    id: 2,
-    title: "PALESTRA - Thaiany Santana",
-    descricao: "Palestra de abertura da Integra-SI",
-    icone: "code",
-    cor: "blue",
-    duration: "1h 30min",
-    professor: ["Valeria Soares"],
-    image: "../src/workshops/background.png",
-    date: "02/03",
-    organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
-    slots: 100,
-    audience: "Todos"
-  },
+  // {
+  //   id: 2,
+  //   title: "PALESTRA - Thaiany Santana",
+  //   descricao: "Palestra de abertura da Integra-SI",
+  //   icone: "code",
+  //   cor: "blue",
+  //   duration: "1h 30min",
+  //   professor: ["Valeria Soares"],
+  //   image: "../src/workshops/background.png",
+  //   date: "02/03",
+  //   organizer: "IntegraSI",
+  //   link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+  //   slots: 100,
+  //   audience: "Todos"
+  // },
   {
     id: 3,
     title: "PALESTRA - Matheus Borges",
@@ -112,10 +112,10 @@ const workshops = [
     cor: "blue",
     duration: "1h 30min",
     professor: ["Valeria Soares"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/699777f94499d-lg.png",
     date: "06/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-palestra-com-matheus-borges/3315978?algoliaID=e8bf2c3072f6aa7f419838e2ca9b8917#compartilhar-evento&share_id=copiarlink",
     slots: 100,
     audience: "Todos"
   },
@@ -129,10 +129,10 @@ const workshops = [
     cor: "blue",
     duration: "3h 30min",
     professor: ["Valeria Soares"],
-    image: "../src/workshops/background.png",
+    image: "	https://images.sympla.com.br/699663de16022-lg.png",
     date: "05/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-hands-on-construindo-aplicacoes-web-com-angular-veteranos/3315872",
     slots: 30,
     audience: "Veteranos"
   },
@@ -145,27 +145,25 @@ const workshops = [
     cor: "green",
     duration: "3h 30min",
     professor: ["Antônio Gabriel"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/69991027547a4-lg.png",
     date: "05/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-quando-a-automacao-vira-necessidade-typescript-e-playwright-veteranos/3318934",
     slots: 20,
     audience: "Veteranos"
   },
   {
     id: 6,
-    title: "Do Ensino Médio à Faculdade de TI: Primeiros Passos no Curso de Sistema de Informação",
-    descricao: "Oficina voltada para acolher e orientar os calouros do curso de Sistema de Informação, abordando a transição do ensino médio para a faculdade," +
-                "a rotina acadêmica, organização dos estudos, adaptação emocional e apresentação de um projeto de sistema em desenvolvimento," +
-                "com o objetivo de motivar e preparar os estudantes para os desafios iniciais da graduação.",
+    title: "Pensamento Computacional: Algoritmo - Calouros",
+    descricao: "Nesta palestra, desmistificamos o conceito de algoritmos, tirando-os das linhas de código e trazendo-os para o mundo real.",
     icone: "settings",
     cor: "purple",
     duration: "3h 30min",
-    professor: ["Dímilly Coelho Santos "],
-    image: "../src/workshops/background.png",
+    professor: ["João Mira", "Giovanna Araujo e Luana Almeida"],
+    image: "https://images.sympla.com.br/699c4fd413e29-lg.png",
     date: "05/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-pensamento-computacional-algoritmo-calouros/3315887",
     slots: 80,
     audience: "Calouros"
   },
@@ -177,10 +175,10 @@ const workshops = [
     cor: "orange",
     duration: "3h 30min",
     professor: ["Anna Beatriz Silva Lima "],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/69965a7cd93fb-lg.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-do-codigo-ao-mundo-real-introducao-ao-software-embarcado-veteranos/3276561",
     slots: 30,
     audience: "Veteranos"
   },
@@ -192,10 +190,10 @@ const workshops = [
     cor: "primary",
     duration: "3h 30min",
     professor: ["Rafael Cerqueira"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/69973fcd287d0-lg.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-o-proximo-da-fila-imersao-em-estrutura-de-dados-e-algoritmos-de-ordenacao-calouros/3316665",
     slots: 30,
     audience: "Calouros"
   },
@@ -207,10 +205,10 @@ const workshops = [
     cor: "red",
     duration: "3h 30min",
     professor: ["Henrique Estrela"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/69966102a12b3-lg.png",
     date: "04/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: " https://www.sympla.com.br/evento/integra-si-do-prompt-ao-prototipo-criando-interfaces-com-figma-ia-veteranos/3276559",
     slots: 30,
     audience: "Veteranos"
   },
@@ -223,10 +221,10 @@ const workshops = [
     cor: "blue",
     duration: "3h 30min",
     professor: ["Amanda Ellen"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/6996685f81654-lg.png",
     date: "04/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-primeiros-passos-no-dev-git-github-e-organizacao-de-estudos-com-ia-calouros/3315886",
     slots: 20,
     audience: "Todos"
   },
@@ -238,14 +236,14 @@ const workshops = [
     cor: "gray",
     duration: "3h 30min",
     professor: ["Gustavo Bezerra", "Carlos Henrique"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/69965cf1b6824-lg.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-logica-de-programacao-na-pratica-do-zero-ao-primeiro-sistema-veteranos/3276562",
     slots: 25,
     audience: "Calouros"
   },
-    {
+  {
     id: 12,
     title: "Git e GitHub além do commit.",
     descricao: "Trazendo temas como: História do Git, Versionamento de Código, Plataforma do GitHub, Porquê o GitHub, GitFlow, Copilot, Ferramentas de DevOps do GitHub, OpenSource e Contribuição, GitHub Actions e CI/CD e um pouco de GitHub Advanced Security",
@@ -253,10 +251,10 @@ const workshops = [
     cor: "gray",
     duration: "3h 30min",
     professor: ["Daniel Alonso"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/69965f4cd25aa-lg.png",
     date: "03/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-git-e-github-alem-do-commit-calouros/3276557",
     slots: 30,
     audience: "Veteranos"
   },
@@ -268,13 +266,17 @@ const workshops = [
     cor: "gray",
     duration: "20:20 sexta, até 17:00, sábado",
     professor: ["UNEX"],
-    image: "../src/workshops/background.png",
+    image: "https://images.sympla.com.br/69684a40bd474-lg.jpg",
     date: "06/03 e 07/03",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/hackathon-integra-si-2026-1-semana-de-integracao-de-sistemas-de-informacao/3276567",
     slots: 75,
     audience: "Veteranos e Calouros"
   }
+
+
+  // https://www.sympla.com.br/evento/integra-si-git-e-github-alem-do-commit-calouros/3276557
+
 ];
 
 
@@ -411,10 +413,10 @@ const teamMembers = [
    {
     name: "Chaira Santos",
     role: "Organizadora do Hackathon",
-     photo: "src/time/chairaS.jpg",
+     photo: "src/time/chaira.jpeg",
      bgColor: "#D6C6E7",  
      maskColor: "#D6C6E7",
-     social: { linkedin: "", github: "" }
+     social: { linkedin: "#", github: "https://github.com/chairass" }
    },
 
    {
