@@ -500,14 +500,14 @@ const teamMembers = [
      social: { linkedin: "https://www.linkedin.com/in/louise-santino-71339430b", github: "https://github.com/louisesantino" }
    },
 
-   {
-    name: "Leonardo Freitas",
-    role: "Coffee Break e Decoração",
-     photo: "src/time/leonardo.jpeg",
-     bgColor: "#25C1C0",  
-     maskColor: "#25C1C0",
-     social: { linkedin: "", github: "" }
-   },
+  //  {
+  //   name: "Leonardo Freitas",
+  //   role: "Coffee Break e Decoração",
+  //    photo: "src/time/leonardo.jpeg",
+  //    bgColor: "#25C1C0",  
+  //    maskColor: "#25C1C0",
+  //    social: { linkedin: "", github: "" }
+  //  },
 
    {
     name: "Gabriel Da Silva",
