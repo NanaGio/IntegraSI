@@ -89,21 +89,21 @@ const workshops = [
     slots: 100,
     audience: "Todos"
   },
-  // {
-  //   id: 2,
-  //   title: "PALESTRA - Thaiany Santana",
-  //   descricao: "Palestra de abertura da Integra-SI",
-  //   icone: "code",
-  //   cor: "blue",
-  //   duration: "1h 30min",
-  //   professor: ["Valeria Soares"],
-  //   image: "../src/workshops/background.png",
-  //   date: "02/03",
-  //   organizer: "IntegraSI",
-  //   link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
-  //   slots: 100,
-  //   audience: "Todos"
-  // },
+   {
+    id: 2,
+    title: "PALESTRA - Tainan Maria",
+    descricao: "Palestra de abertura da Integra-SI",
+    icone: "code",
+    cor: "blue",
+    duration: "1h 30min",
+    professor: ["Valeria Soares"],
+    image: "../src/workshops/background.png",
+    date: "02/03",
+    organizer: "IntegraSI",
+    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    slots: 100,
+    audience: "Todos"
+   },
   {
     id: 3,
     title: "PALESTRA - Matheus Borges",
