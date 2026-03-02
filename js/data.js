@@ -69,6 +69,7 @@ const workshops = [
     professor: ["Valeria Soares"],
     image: "	https://images.sympla.com.br/69684a40bd474-lg.jpg",
     date: "02/03 a 07/03",
+    local: "Auditório",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-2026-1-abertura/3315972?algoliaID=e8bf2c3072f6aa7f419838e2ca9b8917&share_id=copiarlink",
     slots: 100,
@@ -84,6 +85,7 @@ const workshops = [
     professor: ["Valeria Soares"],
     image: "https://images.sympla.com.br/699777c5e304c-lg.png",
     date: "02/03",
+    local: "Auditório",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-palestra-com-anderson/3276563?algoliaID=e8bf2c3072f6aa7f419838e2ca9b8917&share_id=copiarlink",
     slots: 100,
@@ -99,8 +101,9 @@ const workshops = [
     professor: ["Valeria Soares"],
     image: "../src/workshops/background.png",
     date: "02/03",
+    local: "Auditório",
     organizer: "IntegraSI",
-    link: "https://www.sympla.com.br/eventos?s=IntegraSi+-+UNEX&tab=eventos",
+    link: "https://www.sympla.com.br/evento/integra-si-palestra-com-tainan/3276564?algoliaID=738110f5ca8ccc25655e35b130081311",
     slots: 100,
     audience: "Todos"
    },
@@ -117,6 +120,7 @@ const workshops = [
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-palestra-com-matheus-borges/3315978?algoliaID=e8bf2c3072f6aa7f419838e2ca9b8917#compartilhar-evento&share_id=copiarlink",
     slots: 100,
+    local: "SALA 07",
     audience: "Todos"
   },
   {
@@ -131,6 +135,7 @@ const workshops = [
     professor: ["Valeria Soares"],
     image: "	https://images.sympla.com.br/699663de16022-lg.png",
     date: "05/03",
+    local: "LAB 02",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-hands-on-construindo-aplicacoes-web-com-angular-veteranos/3315872",
     slots: 30,
@@ -147,6 +152,7 @@ const workshops = [
     professor: ["Antônio Gabriel"],
     image: "https://images.sympla.com.br/69991027547a4-lg.png",
     date: "05/03",
+    local: "LAB 03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-quando-a-automacao-vira-necessidade-typescript-e-playwright-veteranos/3318934",
     slots: 20,
@@ -162,6 +168,7 @@ const workshops = [
     professor: ["João Mira", "Giovanna Araujo e Luana Almeida"],
     image: "https://images.sympla.com.br/699c4fd413e29-lg.png",
     date: "05/03",
+    local: "LAB 01",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-pensamento-computacional-algoritmo-calouros/3315887",
     slots: 80,
@@ -177,6 +184,7 @@ const workshops = [
     professor: ["Anna Beatriz Silva Lima "],
     image: "https://images.sympla.com.br/69965a7cd93fb-lg.png",
     date: "03/03",
+    local: "LAB 02",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-do-codigo-ao-mundo-real-introducao-ao-software-embarcado-veteranos/3276561",
     slots: 30,
@@ -192,6 +200,7 @@ const workshops = [
     professor: ["Rafael Cerqueira"],
     image: "https://images.sympla.com.br/69973fcd287d0-lg.png",
     date: "03/03",
+    local: "LAB 01",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-o-proximo-da-fila-imersao-em-estrutura-de-dados-e-algoritmos-de-ordenacao-calouros/3316665",
     slots: 30,
@@ -207,6 +216,7 @@ const workshops = [
     professor: ["Henrique Estrela"],
     image: "https://images.sympla.com.br/69966102a12b3-lg.png",
     date: "04/03",
+    local: "LAB 03",
     organizer: "IntegraSI",
     link: " https://www.sympla.com.br/evento/integra-si-do-prompt-ao-prototipo-criando-interfaces-com-figma-ia-veteranos/3276559",
     slots: 30,
@@ -223,10 +233,11 @@ const workshops = [
     professor: ["Amanda Ellen"],
     image: "https://images.sympla.com.br/6996685f81654-lg.png",
     date: "04/03",
+    local: "LAB 01",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-primeiros-passos-no-dev-git-github-e-organizacao-de-estudos-com-ia-calouros/3315886",
     slots: 20,
-    audience: "Todos"
+    audience: "Calouros"
   },
   {
     id: 11,
@@ -238,10 +249,11 @@ const workshops = [
     professor: ["Gustavo Bezerra", "Carlos Henrique"],
     image: "https://images.sympla.com.br/69965cf1b6824-lg.png",
     date: "03/03",
+    local: "LAB 03",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-logica-de-programacao-na-pratica-do-zero-ao-primeiro-sistema-veteranos/3276562",
     slots: 25,
-    audience: "Calouros"
+    audience: "Veteranos"
   },
   {
     id: 12,
@@ -253,6 +265,7 @@ const workshops = [
     professor: ["Daniel Alonso"],
     image: "https://images.sympla.com.br/69965f4cd25aa-lg.png",
     date: "03/03",
+    local: "LAB 02",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/integra-si-git-e-github-alem-do-commit-calouros/3276557",
     slots: 30,
@@ -268,6 +281,7 @@ const workshops = [
     professor: ["UNEX"],
     image: "https://images.sympla.com.br/69684a40bd474-lg.jpg",
     date: "06/03 e 07/03",
+    local: "LAB 07 | AUDITÓRIO",
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/hackathon-integra-si-2026-1-semana-de-integracao-de-sistemas-de-informacao/3276567",
     slots: 75,
@@ -527,4 +541,3 @@ const teamMembers = [
      social: { linkedin: "https://www.linkedin.com/in/lucas-oliveira-01331a265/", github: "https://github.com/lucasolivra1" }
    },
 ];
-

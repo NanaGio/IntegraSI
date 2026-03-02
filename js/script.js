@@ -77,6 +77,10 @@ grid.innerHTML = workshops.filter(w => w.slots > 0).slice(0, 6).map(w => `
           <i data-lucide="calendar"></i>
           ${w.date}
         </span>
+        ${w.local ? `<span>
+          <i data-lucide="map-pin"></i>
+        ${w.local}
+        </span>` : ''}
       </div>
 
       <!-- EXTRA INFO -->

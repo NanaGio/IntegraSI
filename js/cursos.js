@@ -16,6 +16,10 @@ function renderCursos() {
           <i data-lucide="calendar"></i>
           ${c.date}
         </span>
+        ${c.local ? `<span>
+          <i data-lucide="map-pin"></i>
+          ${c.local}
+        </span>` : ''}
       </div>
         <p class="curso-description">${c.descricao}</p>
 
