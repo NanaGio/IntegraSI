@@ -248,6 +248,7 @@
     @media (max-width: 1024px) {
       .participar-grid {
         grid-template-columns: repeat(2, 1fr);
+        
       }
     }
 
@@ -264,6 +265,7 @@
     @media (max-width: 768px) {
       .participar-section {
         padding: 80px 0;
+        
       }
 
       .participar-header {
