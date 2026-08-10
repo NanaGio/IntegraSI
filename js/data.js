@@ -65,7 +65,7 @@ const workshops = [
     descricao: "Integra-SI",
     icone: "code",
     cor: "blue",
-    duration: "02 a 07 de março",
+    duration: "17 a 21 de Agosto",
     professor: ["Valeria Soares"],
     image: "	https://images.sympla.com.br/69684a40bd474-lg.jpg",
     date: "02/03 a 07/03",
