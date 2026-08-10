@@ -136,6 +136,9 @@ scheduleGrid.innerHTML = cronograma.map(dia => `
 */
 
 function createCardHTML(member, index) {
+  const linkedinUrl = member.social?.linkedin || '#';
+  const githubUrl = member.social?.github || '#';
+
   return `
     <div class="team-card" style="background-color: ${member.bgColor}">
       <div class="abstract-shape shape-style-${index % 3}" style="background-color: ${member.maskColor}"></div>
@@ -146,8 +149,19 @@ function createCardHTML(member, index) {
         <h3>${member.name}</h3>
         <span>${member.role}</span>
         <div class="social-row">
-          <a href="${member.social.linkedin}" class="social-btn" target="_blank"><i data-lucide="linkedin"></i></a>
-          <a href="${member.social.github}" class="social-btn" target="_blank"><i data-lucide="github"></i></a>
+          <a href="${linkedinUrl}" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de ${member.name}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6.94 8.5a1.56 1.56 0 1 0 0-3.12 1.56 1.56 0 0 0 0 3.12Z"></path>
+              <path d="M5.5 9.75h2.88V18H5.5z"></path>
+              <path d="M10.63 9.75h2.76v1.12h.04c.38-.72 1.31-1.48 2.7-1.48 2.88 0 3.41 1.9 3.41 4.37V18h-2.88v-7.22c0-1.72-.03-3.93-2.39-3.93-2.4 0-2.77 1.87-2.77 3.8V18H10.63z"></path>
+            </svg>
+          </a>
+          <a href="${githubUrl}" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub de ${member.name}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-4.3 1.4-4.3-2.5-6-3"></path>
+              <path d="M15 21v-3.2a2.8 2.8 0 0 0-.8-2.2c2.7-.3 5.5-1.3 5.5-5.9a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.7 11.7 0 0 0-6 0C5.5 2.4 4.5 2.7 4.5 2.7a4.3 4.3 0 0 0-.1 3.2 4.6 4.6 0 0 0-1.3 3.2c0 4.6 2.8 5.6 5.5 5.9a2.8 2.8 0 0 0-.8 2.2V21"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

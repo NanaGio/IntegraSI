@@ -1155,9 +1155,10 @@ nav a:hover {
   box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
-.social-btn i {
+.social-btn svg {
   width: 20px;
   height: 20px;
+  display: block;
 }
 
 /* =========================
