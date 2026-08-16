@@ -2,6 +2,7 @@
 const counters = document.querySelectorAll("[data-count]");
 const sections = document.querySelectorAll(".section");
 const grid = document.getElementById("workshopsGrid");
+const gridENADE = document.getElementById("workshopsEnadeGrid");
 const scheduleGrid = document.getElementById("scheduleGrid");
 const track = document.getElementById('team-track');
 const galleryGrid = document.getElementById('gallery-grid');
@@ -64,6 +65,51 @@ sections.forEach(sec => observer.observe(sec));
 
 //OFICINAS
 grid.innerHTML = workshops.filter(w => w.slots > 0).slice(0, 12).map(w => `
+  <article class="workshop-card">
+    <div class="workshop-image">
+      <img src="${w.image}" alt="${w.title}">
+    </div>
+
+    <div class="workshop-body">
+      <h3>${w.title}</h3>
+
+      <div class="workshop-meta">
+        <span>
+          <i data-lucide="calendar"></i>
+          ${w.date}
+        </span>
+        ${w.local ? `<span>
+          <i data-lucide="map-pin"></i>
+        ${w.local}
+        </span>` : ''}
+      </div>
+
+      <!-- EXTRA INFO -->
+      <div class="workshop-extra">
+        <span class="workshop-slots">
+          ${w.slots} vagas
+        </span>
+
+        <span class="workshop-duration">
+          ${w.duration} de curso
+        </span>
+
+        <span class="workshop-audience classificacao-${w.audience.toLowerCase()}">
+          ${w.audience}
+        </span>
+      </div>
+      <div class="workshop-footer">
+        <span class="organizer">
+          Organizado Por <strong>${w.organizer}</strong>
+        </span>
+        <a href="${w.link}" class="btn-buy" target="_blank">Inscreva-se</a>
+      </div>
+    </div>
+  </article>
+`).join("");
+
+//OFICINAS
+gridENADE.innerHTML = workshopsEnade.filter(w => w.slots > 0).slice(0, 12).map(w => `
   <article class="workshop-card">
     <div class="workshop-image">
       <img src="${w.image}" alt="${w.title}">
