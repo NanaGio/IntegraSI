@@ -105,16 +105,32 @@
   </section>
 
   <section id="qrcode" class="section-gray">
-        <div class="container qrcode-container">
-          <div class="section-header">
-            <h2>
-              Concorra a R$200!
-            </h2>
-            <p>Contribua com o evento por meio da rifa e concorra ao prêmio </p>
+    <div class="container qrcode-container">
+      <div class="section-header">
+        <h2>Rifa IntegraSI — Concorra a R$200</h2>
+      </div>
 
+      <div class="raffle-two-col">
+        <div class="raffle-col raffle-col-left">
+          <div class="raffle-tab">QR de Pagamento</div>
+          <div class="raffle-qr">
+            <img class="qrimg" src="./src/img/QRCODERIFA.jpeg" alt="QR Rifa" />
+            <p class="qr-caption">Escaneie para efetuar pagamento e confirme com a organização.</p>
           </div>
-        
-        <img class="qrimg" src="./src/img/QRCODERIFA.jpeg"/>
+        </div>
+
+        <!-- <div class="raffle-col raffle-col-right">
+          <div class="raffle-tab">Rifa</div>
+          <div class="raffle-stats">
+            <span id="raffle-available">Disponíveis: 100</span>
+            <span id="raffle-taken">Reservados: 0</span>
+          </div>
+          <div id="raffleGrid" class="raffle-grid" data-readonly="true" aria-label="Mapa da rifa — 1 a 100"></div>
+          <p class="raffle-note">Números marcados mostram um X (ocupado).</p>
+          <div id="raffleList" class="raffle-list" aria-live="polite"></div>
+        </div> -->
+      </div>
+
     </div>
   </section>
 
@@ -400,6 +416,7 @@
 
   <script src="js/data.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/raffle.js"></script>
   <script>
     lucide.createIcons();
   </script>
