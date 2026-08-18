@@ -171,7 +171,7 @@ const workshops = [
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/personalizando-o-seu-git/3542727?algoliaID=59837885e4db20ee012b417ce33ad597",
     slots: 10,
-    audience: "Calouros"
+    audience: "Veteranos"
   },
   {
     id: 7,
@@ -187,7 +187,7 @@ const workshops = [
     organizer: "IntegraSI",
     link: "https://www.sympla.com.br/evento/personalizando-o-seu-git/3542640?algoliaID=59837885e4db20ee012b417ce33ad597",
     slots: 10,
-    audience: "Veteranos"
+    audience: "Calouros"
   },
   {
     id: 8,
